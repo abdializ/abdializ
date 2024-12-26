@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Sir Abdisalam | The Website</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>http://localhost:60023/blog/</link>
     <description>Recent content in Blogs on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Dec 2024 00:10:57 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:60023/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book Talk</title>
-      <link>http://localhost:1313/blog/whynow/</link>
+      <link>http://localhost:60023/blog/whynow/</link>
       <pubDate>Thu, 26 Dec 2024 00:10:57 -0600</pubDate>
-      <guid>http://localhost:1313/blog/whynow/</guid>
+      <guid>http://localhost:60023/blog/whynow/</guid>
       <description>&lt;p&gt;Fyodor Dostoevsky’s The Brothers Karamazov is a towering achievement in world literature, offering readers an intricate exploration of the human condition. Set in 19th-century Russia, the novel weaves a compelling tale of family conflict, moral dilemmas, and the profound questions that define human existence. At its core, the story is an inquiry into faith, love, and the nature of good and evil, but it transcends its narrative to become a philosophical masterpiece.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/blog/firstblog-post/</link>
+      <link>http://localhost:60023/blog/firstblog-post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/firstblog-post/</guid>
+      <guid>http://localhost:60023/blog/firstblog-post/</guid>
       <description></description>
     </item>
   </channel>
