@@ -84,7 +84,13 @@ body {
   }
 
  
-
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it only fills the viewport */
+    margin: 0; /* Prevent unnecessary margins */
+    padding: 0;
+}
 
 
 h1{ 
@@ -175,6 +181,11 @@ article {
     animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
     
 }
+
+footer .theme-by {
+    text-align: center;
+    margin: 100px 0 0;
+  }  
 
 /* nav bar */
 
