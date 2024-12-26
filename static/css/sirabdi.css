@@ -5,6 +5,25 @@
   box-sizing: border-box;
 }
 
+div.blog-tags{
+    color: #928585 !important;
+    font-weight: bolder !important;
+    font-style: oblique !important;
+}
+
+.posts-list h5{
+    color: #928585 !important;
+    font-weight: bolder !important;
+    font-style: oblique !important;
+}
+
+.posts-list p{
+    text-align: center;
+    font-style:inherit;
+    color:#FFB255 ;
+    font-size: 15px;
+}
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -38,15 +57,27 @@ img{
     counter-reset: theorem definition sidenote-counter;
 }
 
-.posts-list p{
-    font-style: italic;
-    color: red;
-    font-size: 15px;
-}
 
 .container h6{
     color: #928585;
     font-weight: bold;
+}
+
+
+.tag-title{
+    text-align: left;
+}
+
+#abdisalam-sharif-ali{
+    text-align: center;
+}
+
+blockquote {
+    border-left: #928585 solid;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 1rem 1rem 1rem 3rem;
+    margin: 2.3rem;
 }
 
 /* Reset some basic elements for a clean slate */
