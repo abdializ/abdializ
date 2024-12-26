@@ -1,0 +1,36 @@
+<!-- layouts/partials/head.html -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Page Title -->
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+
+<!-- SEO Metadata -->
+<meta name="description" content="{{ .Params.description | default .Site.Params.description }}">
+<meta name="keywords" content="{{ .Params.keywords | default .Site.Params.keywords }}">
+<meta name="author" content="{{ .Site.Author.name | default "Your Name" }}">
+
+<!-- Open Graph Metadata -->
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+<meta property="og:description" content="{{ .Params.description | default .Site.Params.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ .Params.image | default "default-og-image.png" | relURL }}">
+
+<!-- Twitter Card Metadata -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
+<meta name="twitter:description" content="{{ .Params.description | default .Site.Params.description }}">
+<meta name="twitter:image" content="{{ .Params.image | default "default-og-image.png" | relURL }}">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="{{ "favicon34.ico" | relURL }}">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="{{ "css/sirabdi.css" | relURL }}">
+
+<!-- Additional Resources -->
+<!-- Uncomment and replace with your analytics or fonts if needed -->
+<!-- <script src="https://example.com/script.js" async></script> -->
+<!-- <link rel="stylesheet" href="https://example.com/font.css"> -->

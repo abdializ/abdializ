@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Dec 2024 00:10:57 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book Talk</title>
+      <link>http://localhost:1313/blog/whynow/</link>
+      <pubDate>Thu, 26 Dec 2024 00:10:57 -0600</pubDate>
+      <guid>http://localhost:1313/blog/whynow/</guid>
+      <description>&lt;p&gt;Fyodor Dostoevsky’s The Brothers Karamazov is a towering achievement in world literature, offering readers an intricate exploration of the human condition. Set in 19th-century Russia, the novel weaves a compelling tale of family conflict, moral dilemmas, and the profound questions that define human existence. At its core, the story is an inquiry into faith, love, and the nature of good and evil, but it transcends its narrative to become a philosophical masterpiece.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Thu, 26 Dec 2024 00:06:51 -0600</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 25 Dec 2024 20:58:06 -0600</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/abdi.png&#34; alt=&#34;abdi&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/firstblog-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/firstblog-post/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

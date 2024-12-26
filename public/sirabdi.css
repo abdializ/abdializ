@@ -1,0 +1,296 @@
+/* Reset some basic elements for a clean slate */
+:root {
+    --background-color: #090B09;
+    --text-color: #928585;
+    --link-color: #6F6666;
+    --border-color: #777777;
+    --button-color: var(--background-color);
+}
+
+/* Checking github update */
+
+/* Light mode overrides */
+body.light-mode {
+    --background-color: #FFF1E1;
+    --text-color: #000000;
+    --link-color: #1a73e8;
+    --border-color: #cccccc;
+    --button-color: var(--background-color);
+}
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+#theme-toggle {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--button-color); /* Purple color */
+    color: #948779; /* White text */
+    border: none;
+    border-radius: 10%; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    align-items: center;
+    justify-content: center;
+    font-size: 2em; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 120px; /* Set width */
+    line-height: 10px;
+    height: 50px; /* Set height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+    transition: background-color 0.2s ease, transform 0.4s ease; /* Smooth transitions */
+    z-index: 9999;
+}
+
+#theme-toggle:hover {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--button-color); /* Slightly lighter purple on hover */
+    transform: scale(1.2); /* Slightly larger on hover */
+}
+
+#theme-toggle:active {
+    transform: scale(.85); /* Slightly smaller when clicked */
+}
+
+
+
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #928585; /* Example color for text against video background */
+}
+
+.spinning-a {
+    font-size: 3em;
+    color: #928585;
+    margin-bottom: 20px;
+    animation: spin 5s linear infinite, scaleInOut 5s ease-in-out infinite;
+    transform-origin: center;
+}
+.h1-text {
+    font-size: 2em;
+    color: #928585; /* Change color as needed */
+    margin: 0 0 10px;
+    animation: blink-caret .75s step-end infinite ;
+}
+
+.text-color {
+    color: #928585; /* Change this to your desired color */
+}
+
+.p-text {
+    font-size: 1.2em;
+    color: #928585; /* Change color as needed */
+    margin: 0;
+    white-space: nowrap; /* Ensure the text doesn't wrap */
+    overflow: hidden; /* Hide the overflowing text */
+    border-right: .15em solid #777777; /* Blinking cursor effect */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    
+}
+
+/* nav bar */
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar .homelist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar .homelist li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar .homelist li a {
+    text-decoration: none;
+    color: #6F6666; /* White color for the links */
+    font-size: 1.3em; /* Adjust the font size as needed */
+    transition: color 0.3s ease;
+}
+
+.navbar .homelist li a:hover {
+    color: #928585; /* Lighter shade on hover */
+}
+
+/* Social Media Icons */
+.social-media {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    width: 100%;
+    text-align: center;
+}
+
+.social-icon {
+    margin: 0 10px; /* Adjust spacing as needed */
+    display: inline-block;
+}
+
+.social-icon img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    filter: invert(34%) sepia(3%) saturate(0%) hue-rotate(200deg) brightness(96%) contrast(91%); /* Change this filter to match the color of your h1 element */
+    transition: filter 0.3s ease;
+}
+
+.social-icon img:hover {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(200deg) brightness(100%) contrast(100%); /* Adjust hover effect as needed */
+}
+
+/* Change the color to match the h1 element */
+ .social-icon img {
+    color: #2B2A2A; /* Same color as h1 */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #2B2A2A; }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes spin-reverse {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+.spinning-a:hover {
+    animation: spin-reverse 2s cubic-bezier(0.2, 0.8, 0.2, 1) infinite, scaleInOut 2s ease-in-out infinite;
+}
+
+/* Animation for fading in and out */
+@keyframes fadeInOut {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1;  }
+
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .spinning-a {
+        font-size: 2em; /* Decrease font size */
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+    
+    #h1-text {
+        font-size: 1.5em; /* Decrease font size */
+    }
+    
+    #p-text {
+        font-size: 1em; /* Decrease font size */
+    }
+}
+
+/* About page-specific override */
+.about-page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--background-color);
+    overflow: auto;
+}
+
+/* About page title styling */
+.top-title {
+    position: absolute; /* Absolute positioning for fine control */
+    top: 20px;          /* Align it 20px from the top */
+    left: 50%;
+    transform: translate(-50%, 0); /* Horizontally center */
+    text-align: center;
+    z-index: 999;
+}
+
+
+
+.top-title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.top-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, p, a {
+    color: var(--text-color);     /* Use text color variable for all text elements */
+}
+
+/* Media query for smaller screens (phones) */
+@media screen and (max-width: 768px) {
+    .top-title {
+        margin: 70px 0 20px; /* Increase the top margin on smaller screens */
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .top-title {
+        margin: 120px 0 20px; /* Increase the margin even more on very small screens */
+        font-size: 2rem; /* Reduce the size of the title slightly */
+    }
+
+ 
+}
+
+
+/* About page content styling */
+.about-content {
+    max-width: 700px;    /* Allow content to scale */
+    margin: 50px auto;   /* Center the block vertically and horizontally */
+    padding: 20px;
+    line-height: 1.6;    /* Improve text readability */
+    text-align: justify; /* Justify text alignment */
+}
+
+/* Centering the image in the about-content */
+.centered-photo {
+    display: block;
+    margin: 20px auto; /* Center image */
+    max-width: 80%;    /* Adjust to fit parent container */
+    height: auto;      /* Maintain aspect ratio */
+}
+
+/* Media query for tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    .centered-photo {
+        max-width: 70%;  /* Increase the image width relative to the smaller screen size */
+    }
+}
+
+/* Media query for very small screens like phones */
+@media screen and (max-width: 480px) {
+    .centered-photo {
+        max-width: 30%;  /* Further increase the width for phones to maintain visibility */
+    }
+}
+
+

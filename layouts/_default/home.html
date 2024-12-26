@@ -1,0 +1,46 @@
+{{ define "main" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "sirabdi.css" | relURL }}">
+    <script src="{{ "js/sirabdi.js" | relURL }}"></script>
+    <link rel="icon" type="image/x-icon" href="{{ "favicon34.ico" | relURL }}">
+</head>
+<body>
+   
+    
+    
+    <div class="xyz" id="xyz">
+        <div class="spinning-a">A</div>
+        <h1 id="h1-text">Sir Abdisalam | The Website</h1>
+        <p id="p-text">Under-Construction</p>
+
+        <nav class="navbar">
+            <ul class="homelist">
+                <li><a href="{{ "about/" | relURL }}">About Me</a></li>
+                <li><a href="{{ "projects/" | relURL }}">Projects</a></li>
+                <li><a href="{{ "books/" | relURL }}">Books</a></li>
+                <li><a href="{{ "blog/" | relURL }}">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-media">
+        <a href="https://instagram.com/sirabdisalam?igsh=MTB3dXRtOGhsaW93Nw==" target="_blank" class="social-icon">
+            <img src="{{ "images/icons8-instagram.svg" | relURL }}" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/abdisalam-ali-a35101257" target="_blank" class="social-icon">
+            <img src="{{ "images/icons8-linkedin.svg" | relURL }}" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/abdializ" target="_blank" class="social-icon">
+            <img src="{{ "images/icons8-github.svg" | relURL }}" alt="GitHub">
+        </a>
+    </div>
+
+</body>
+</html>
+{{ end }}
