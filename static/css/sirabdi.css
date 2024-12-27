@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+hr {
+    height: 3px;
+    border: none;
+    background-color:#928585;
+    margin-bottom: 3rem;
+}
+
 div.blog-tags{
     color: #928585 !important;
     font-weight: bolder !important;
@@ -66,6 +73,11 @@ img{
 
 .tag-title{
     text-align: left;
+    text-decoration: none;
+}
+
+.tag-title a{
+    text-decoration: none;
 }
 
 #abdisalam-sharif-ali{
@@ -169,8 +181,24 @@ article > * + * {
   article hr {
     margin-left: 0rem;
   }
-  article h2 {
+  article h1 {
     margin-left: 0rem;
+  }
+
+  article a{
+    text-decoration: none;
+  }
+
+  .site-header a{
+    text-decoration: none;
+  }
+
+  .site-header {
+    transition: all 0.3s ease;
+  }
+
+  .site-header:hover{
+    transform: scale(1.05); /* Slightly increase the size */
   }
 
   .text-center {
