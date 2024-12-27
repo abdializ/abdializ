@@ -41,6 +41,8 @@ img{
     margin: 0 auto;
 }
 
+
+
 .xyz {
     text-align: center;
     position: relative;
@@ -407,6 +409,14 @@ h1, h2, p, a {
 @media screen and (max-width: 480px) {
     .centered-photo {
         max-width: 30%;  /* Further increase the width for phones to maintain visibility */
+    }
+}
+
+@media (max-width: 768px) {
+    .container img {
+        width: 100%; /* Make the image fill its container */
+        max-height: 300px; /* Optional: Restrict the height */
+        object-fit: cover; /* Ensure the image scales without distortion */
     }
 }
 

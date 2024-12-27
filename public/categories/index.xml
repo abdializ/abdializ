@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Sir Abdisalam | The Website</title>
-    <link>http://localhost:60023/categories/</link>
+    <link>http://localhost:56476/categories/</link>
     <description>Recent content in Categories on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:60023/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:56476/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
