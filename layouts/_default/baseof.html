@@ -2,14 +2,22 @@
 <html lang="{{ .Site.LanguageCode }}">
     {{- partial "head.html" . -}}
     <body>
-        
+        <!-- Mode Button -->
         <button id="theme-toggle" class="mode-button">Mode</button>
+
+        <!-- Conditional Header -->
+        {{ if not .IsHome }}
+            {{- partial "header.html" . -}}
+        {{ end }}
+        
+        <!-- Main Content -->
         <div id="content">
-        {{- block "main" . }}{{- end }}
+            {{- block "main" . }}{{- end }}
         </div>
 
-          <!-- Inline JavaScript -->
-          <script>
+        <!-- Inline JavaScript -->
+        <script>
+            // Multilingual Typing Animation
             const text = document.getElementById('p-text');
             const initialText = '';
             const texts = [
@@ -61,7 +69,5 @@
                 });
             });
         </script>
-        
     </body>
-    
 </html>
