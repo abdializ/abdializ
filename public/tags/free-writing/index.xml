@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Free-Writing on Sir Abdisalam | The Website</title>
-    <link>http://localhost:62252/tags/free-writing/</link>
+    <link>http://localhost:49634/tags/free-writing/</link>
     <description>Recent content in Free-Writing on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Dec 2024 00:10:57 -0600</lastBuildDate>
-    <atom:link href="http://localhost:62252/tags/free-writing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:49634/tags/free-writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book Talk</title>
-      <link>http://localhost:62252/blog/whynow/</link>
+      <link>http://localhost:49634/blog/whynow/</link>
       <pubDate>Thu, 26 Dec 2024 00:10:57 -0600</pubDate>
-      <guid>http://localhost:62252/blog/whynow/</guid>
-      <description>&lt;p&gt;Fyodor Dostoevsky’s The Brothers Karamazov is a towering achievement in world literature, offering readers an intricate exploration of the human condition. Set in 19th-century Russia, the novel weaves a compelling tale of family conflict, moral dilemmas, and the profound questions that define human existence. At its core, the story is an inquiry into faith, love, and the nature of good and evil, but it transcends its narrative to become a philosophical masterpiece.&lt;/p&gt;</description>
+      <guid>http://localhost:49634/blog/whynow/</guid>
+      <description>&lt;p&gt;When I first read Dostoevsky’s The Brothers Karamazov, it felt less like reading a novel and more like staring into a mirror that reflected humanity at its rawest. This book isn’t just about a dysfunctional family in 19th-century Russia—it’s about everything that makes us human: faith, doubt, love, betrayal, morality, and the struggle to make sense of it all.&lt;/p&gt;&#xA;&lt;p&gt;The story starts with a messy family drama—a terrible father and his three very different sons. Right away, I could feel the tension in the air, and it hooked me. Each character brought their own perspective to the table: Alyosha with his quiet faith, Ivan with his cold rationalism, and Dmitri with his impulsive passion. It’s like Dostoevsky poured every possible way of thinking and feeling into these characters and then let them collide. Watching their relationships unravel felt so real, like I was sitting in the room with them, caught in the crossfire of their arguments and confessions.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
