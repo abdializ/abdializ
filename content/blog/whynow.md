@@ -1,5 +1,5 @@
 +++
-title = "Book Talk"
+title = "Random Thought On The Brothers Karamazov"
 date = 2024-12-26T00:10:57-06:00
 tags = ["Free-Writing"]
 description = "Abdi and his thoughts on The Brothers Karamazov"
