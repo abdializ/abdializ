@@ -80,6 +80,14 @@ img{
     text-decoration: none;
 }
 
+.tag-title{
+    transition: all 0.3s ease;
+  }
+
+  .tag-title:hover{
+    transform: scale(1.05); /* Slightly increase the size */
+  }
+
 #abdisalam-sharif-ali{
     text-align: center;
 }
