@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sir Abdisalam | The Website</title>
-    <link>http://localhost:62252/</link>
+    <link>http://localhost:49634/</link>
     <description>Recent content on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Dec 2024 00:10:57 -0600</lastBuildDate>
-    <atom:link href="http://localhost:62252/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:49634/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book Talk</title>
-      <link>http://localhost:62252/blog/whynow/</link>
+      <link>http://localhost:49634/blog/whynow/</link>
       <pubDate>Thu, 26 Dec 2024 00:10:57 -0600</pubDate>
-      <guid>http://localhost:62252/blog/whynow/</guid>
-      <description>&lt;p&gt;Fyodor Dostoevsky’s The Brothers Karamazov is a towering achievement in world literature, offering readers an intricate exploration of the human condition. Set in 19th-century Russia, the novel weaves a compelling tale of family conflict, moral dilemmas, and the profound questions that define human existence. At its core, the story is an inquiry into faith, love, and the nature of good and evil, but it transcends its narrative to become a philosophical masterpiece.&lt;/p&gt;</description>
+      <guid>http://localhost:49634/blog/whynow/</guid>
+      <description>&lt;p&gt;When I first read Dostoevsky’s The Brothers Karamazov, it felt less like reading a novel and more like staring into a mirror that reflected humanity at its rawest. This book isn’t just about a dysfunctional family in 19th-century Russia—it’s about everything that makes us human: faith, doubt, love, betrayal, morality, and the struggle to make sense of it all.&lt;/p&gt;&#xA;&lt;p&gt;The story starts with a messy family drama—a terrible father and his three very different sons. Right away, I could feel the tension in the air, and it hooked me. Each character brought their own perspective to the table: Alyosha with his quiet faith, Ivan with his cold rationalism, and Dmitri with his impulsive passion. It’s like Dostoevsky poured every possible way of thinking and feeling into these characters and then let them collide. Watching their relationships unravel felt so real, like I was sitting in the room with them, caught in the crossfire of their arguments and confessions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Books</title>
-      <link>http://localhost:62252/books/</link>
+      <link>http://localhost:49634/books/</link>
       <pubDate>Thu, 26 Dec 2024 00:06:51 -0600</pubDate>
-      <guid>http://localhost:62252/books/</guid>
+      <guid>http://localhost:49634/books/</guid>
       <description></description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:62252/projects/</link>
+      <link>http://localhost:49634/projects/</link>
       <pubDate>Thu, 26 Dec 2024 00:06:51 -0600</pubDate>
-      <guid>http://localhost:62252/projects/</guid>
+      <guid>http://localhost:49634/projects/</guid>
       <description></description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:62252/about/</link>
+      <link>http://localhost:49634/about/</link>
       <pubDate>Wed, 25 Dec 2024 20:58:06 -0600</pubDate>
-      <guid>http://localhost:62252/about/</guid>
-      <description>&lt;h2 id=&#34;abdisalam-sharif-ali&#34;&gt;Abdisalam Sharif Ali&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:62252/images/abdi.png&#34; alt=&#34;abdi&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well&amp;hellip; Welcome!&#xA;I&amp;rsquo;m a lover of books-classical ones mostly-a runner at heart, and someone who&amp;rsquo;s never shy about speaking my mind. If there&amp;rsquo;s one thing you should know about me, it&amp;rsquo;s that I believe in standing up for what I think is right-and doing something about it.&lt;/p&gt;&#xA;&lt;p&gt;I am in love with trying to bring education everywhere (pretty crazy that isn&amp;rsquo;t the case). I&amp;rsquo;m also a huge fan of the journalism industry and believe that traditional journalism is dying at the expense of money and greed (but I&amp;rsquo;ll probably go on and on about this in a blog post later).&lt;/p&gt;</description>
+      <guid>http://localhost:49634/about/</guid>
+      <description>&lt;h2 id=&#34;abdisalam-sharif-ali&#34;&gt;Abdisalam Sharif Ali&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:49634/images/abdi.png&#34; alt=&#34;abdi&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well&amp;hellip; Welcome!&#xA;I&amp;rsquo;m a lover of books-classical ones mostly-a runner at heart, and someone who&amp;rsquo;s never shy about speaking my mind. If there&amp;rsquo;s one thing you should know about me, it&amp;rsquo;s that I believe in standing up for what I think is right-and doing something about it.&lt;/p&gt;&#xA;&lt;p&gt;I am in love with trying to bring education everywhere (pretty crazy that isn&amp;rsquo;t the case). I&amp;rsquo;m also a huge fan of the journalism industry and believe that traditional journalism is dying at the expense of money and greed (but I&amp;rsquo;ll probably go on and on about this in a blog post later).&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:62252/blog/firstblog-post/</link>
+      <link>http://localhost:49634/blog/firstblog-post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62252/blog/firstblog-post/</guid>
+      <guid>http://localhost:49634/blog/firstblog-post/</guid>
       <description></description>
     </item>
   </channel>
