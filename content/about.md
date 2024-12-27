@@ -7,7 +7,7 @@ tags = ['Sir Abdisalam']
 
 ## Abdisalam Sharif Ali
 
-![abdi](/images/abdi.png)
+![abdi](/images/cam.png)
 
 ---
 
