@@ -134,6 +134,7 @@ img{
     display: flex;
     margin: .2rem 0 0 .8rem;
     align-items: top;
+    color: #FFB255;
 }
 
 .box {
