@@ -1,4 +1,4 @@
-/* Box sizing rules */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 *,
 *::before,
 *::after {
@@ -10,6 +10,11 @@ hr {
     border: none;
     background-color:#928585;
     margin-bottom: 3rem;
+}
+
+pre{
+    color: #928585;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 div.blog-tags{
@@ -91,6 +96,59 @@ img{
 
 #abdisalam-sharif-ali{
     text-align: center;
+}
+
+.toc{
+    font-weight: lighter;
+    font-family: 'source-code-pro', sans-serif;
+    color: #928585;
+}
+
+/* Preview/content styling */
+
+#TableOfContents li{
+    text-decoration:double; 
+    color: #FFB255 !important;
+}
+
+#TableOfContents li{
+    transition: all 0.4s ease;
+  }
+
+ #TableOfContents li:hover{
+    transform: scale(1.02); /* Slightly increase the size */
+  }
+
+  #TableOfContents li:before {
+    content: counters(item, '.') ' ';
+    counter-increment: item;
+    padding-right: 0.85rem;
+  }
+
+  #TableOfContents > ul {
+    counter-reset: item;
+    list-style-type: none;
+  }
+
+  .checkbox {
+    display: flex;
+    margin: .2rem 0 0 .8rem;
+    align-items: top;
+}
+
+.box {
+    width: 1rem;
+    height: .8rem;
+    margin: .5rem 1rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFB255;
+}
+
+.checked .box {
+    background-color: #40280b;
+    color: #928585; 
 }
 
 blockquote {
