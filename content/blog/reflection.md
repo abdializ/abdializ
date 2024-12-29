@@ -12,7 +12,7 @@ draft = false
 
 Really hits the head now, looking back throughout the year. I found myself casually flying through specific months, and that specific motivation I once had in January seemed more of a ghost of my thoughts. It really is easy to THINK, but to DO—this is truly what isn’t easy. But I must give myself credit; this year, I have taken lessons and wrote them down in my core memory. Also what is a year without lesson ay? 
 
-I can also give myself credit professional wise, I have learned more skills and on the path to soon mastering additional skills not only in tech, but also in management, and writing. Speaking of writing, I discovered witin the latter days of the year that it's really relaxing to the soul and mind to just go write <i>(doesn't matter if its for research or self-entertamiment)</i>.
+I can also give myself credit professional wise, I have learned more skills and on the path to soon mastering additional skills not only in tech, but also in management, and writing. Speaking of writing, I discovered witin the latter days of the year that it's really relaxing to the soul and mind to just go write <i>(doesn't matter if its for research or self-entertainment)</i>.
 
 Ever since 2020, reading has been an important activity for me, and this time last year, I declared I would:
 
