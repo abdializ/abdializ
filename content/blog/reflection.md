@@ -28,7 +28,7 @@ Spiritually, this year has had its ups and downs—it is a journey, after all, a
 
 Alas, this year was great. I improved, I showed old habits and reconginzed them, and discovered new weakness which one needs to do. All I gotta say now at the end of my reflection is 
  
-                      ---------------- Alhamduillah ---------------- 
+     ---------------- Alhamduillah ---------------- 
 
 
 
