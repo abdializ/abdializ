@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Free-Writing on Sir Abdisalam | The Website</title>
-    <link>http://localhost:56248/tags/free-writing/</link>
+    <link>http://localhost:1313/tags/free-writing/</link>
     <description>Recent content in Free-Writing on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Dec 2024 00:10:57 -0600</lastBuildDate>
-    <atom:link href="http://localhost:56248/tags/free-writing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/free-writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Random Thought On The Brothers Karamazov</title>
-      <link>http://localhost:56248/blog/whynow/</link>
+      <link>http://localhost:1313/blog/whynow/</link>
       <pubDate>Thu, 26 Dec 2024 00:10:57 -0600</pubDate>
-      <guid>http://localhost:56248/blog/whynow/</guid>
+      <guid>http://localhost:1313/blog/whynow/</guid>
       <description>&lt;p&gt;When I first read Dostoevsky’s The Brothers Karamazov, it felt less like reading a novel and more like staring into a mirror that reflected humanity at its rawest. This book isn’t just about a dysfunctional family in 19th-century Russia—it’s about everything that makes us human: faith, doubt, love, betrayal, morality, and the struggle to make sense of it all.&lt;/p&gt;&#xA;&lt;p&gt;The story starts with a messy family drama—a terrible father and his three very different sons. Right away, I could feel the tension in the air, and it hooked me. Each character brought their own perspective to the table: Alyosha with his quiet faith, Ivan with his cold rationalism, and Dmitri with his impulsive passion. It’s like Dostoevsky poured every possible way of thinking and feeling into these characters and then let them collide. Watching their relationships unravel felt so real, like I was sitting in the room with them, caught in the crossfire of their arguments and confessions.&lt;/p&gt;</description>
     </item>
   </channel>
