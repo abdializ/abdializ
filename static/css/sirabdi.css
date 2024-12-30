@@ -152,6 +152,16 @@ img{
     color: #928585; 
 }
 
+/* Light Mode */
+body.light-mode .checkbox {
+    color: #40280b; 
+}
+
+body.light-mode .box {
+    border: 1px solid #40280b; /* Blue border */
+}
+
+
 blockquote {
     border-left: #928585 solid;
     font-family: 'Times New Roman', Times, serif;
