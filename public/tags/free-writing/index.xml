@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Free-Writing on Sir Abdisalam | The Website</title>
-    <link>http://localhost:1313/tags/free-writing/</link>
+    <link>http://localhost:56361/tags/free-writing/</link>
     <description>Recent content in Free-Writing on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Dec 2024 00:10:57 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/free-writing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:56361/tags/free-writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Random Thought On The Brothers Karamazov</title>
-      <link>http://localhost:1313/blog/whynow/</link>
+      <link>http://localhost:56361/blog/whynow/</link>
       <pubDate>Mon, 30 Dec 2024 00:10:57 -0600</pubDate>
-      <guid>http://localhost:1313/blog/whynow/</guid>
+      <guid>http://localhost:56361/blog/whynow/</guid>
       <description>&lt;div&gt;&#xA;    &lt;h3 class=&#34;toc&#34;&gt;Preview&lt;/h2&gt;&#xA;    &lt;hr&gt;&#xA;&#xA;    &lt;div style=&#34;margin-left: 1.5rem&#34;&gt;&#xA;        &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ul&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#intro--my-current-thoughts-on-book-1&#34;&gt;Intro : My current thoughts on Book 1&lt;/a&gt;&lt;/li&gt;&#xA;  &lt;/ul&gt;&#xA;&lt;/nav&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;intro--my-current-thoughts-on-book-1&#34;&gt;Intro : My current thoughts on Book 1&lt;/h2&gt;&#xA;&lt;p&gt;I’m currently reading the book, and I must say, it begins at a rather slow pace—though this is, of course, typical of Fyodor’s style. Books One was excellent, revealing a deeply dysfunctional family, which I believe is entirely the result of Fyodor Pavlovich’s character.&lt;/p&gt;</description>
     </item>
   </channel>
