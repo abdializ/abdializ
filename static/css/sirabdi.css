@@ -214,6 +214,36 @@ body {
 }
 
 
+
+/* end */
+
+/*book section */
+
+/* Books page */
+.hoverable:hover {
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .text-highlight {
+    /* your special styles */
+      color: #f7be71;
+  }
+  .book-description {
+      margin: 1rem 1rem 1.5rem 1.5rem;
+  }
+  
+  .sub {
+      border: 1px dashed;
+      border-color: #191919;
+      margin-left: 0rem;
+  }
+/* end */
+
+
 h1{ 
     text-align: center;
 }
@@ -310,13 +340,22 @@ article {
 
 .p-text {
     font-size: 1.2em;
-    color: #928585; /* Change color as needed */
+    color: #928585; /* Text color */
     margin: 0;
-    white-space: nowrap; /* Ensure the text doesn't wrap */
-    overflow: hidden; /* Hide the overflowing text */
-    border-right: .15em solid #777777; /* Blinking cursor effect */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    border-right: .15em solid #2B2A2A; /* Blinking cursor effect */
     animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
-    
+
+    /* Default alignment and direction */
+    text-align: left;
+    direction: ltr;
+}
+
+/* RTL-specific styling */
+.p-text[dir="rtl"] {
+    text-align: right; /* Align text to the right */
+    direction: rtl; /* Set right-to-left direction */
 }
 
 footer .theme-by {
