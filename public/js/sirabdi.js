@@ -1,62 +1,77 @@
-const text = document.getElementById('p-text');
-const initialText = '';
-const texts = [
-    '在建中', // Chinese
-    'In costruzione', // Italian
-    'قيد الإنشاء', // Arabic
-    'Socodka dhismaha', // Somali
-    'Under Construction'  // English
-];
-let textIndex = 0;
-let index = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    /**
+     * Multilingual Typing Animation
+     */
+    const textElement = document.getElementById('p-text');
+    const texts = [
+        { content: '在建中', direction: 'ltr' }, // Chinese (Left-to-Right)
+        { content: 'In costruzione', direction: 'ltr' }, // Italian (Left-to-Right)
+        { content: 'قيد الإنشاء', direction: 'rtl' }, // Arabic (Right-to-Left)
+        { content: 'Socodka dhismaha', direction: 'ltr' }, // Somali (Left-to-Right)
+        { content: 'Under Construction', direction: 'ltr' } // English (Left-to-Right)
+    ];
+    let textIndex = 0;
+    let charIndex = 0;
 
-function type() {
-    if (index < initialText.length) {
-        text.innerHTML += initialText.charAt(index);
-        index++;
-        setTimeout(type, 100);
-    } else {
-        setTimeout(changeText, 5000); // Start changing text after a short delay
-    }
-}
+    function typeText() {
+        const currentText = texts[textIndex];
 
-function changeText() {
-    text.style.color = '#928585'; // Set the color you want
+        // Set text direction and alignment dynamically
+        if (textElement) {
+            textElement.setAttribute('dir', currentText.direction);
+            textElement.style.textAlign = currentText.direction === 'rtl' ? 'right' : 'left';
 
-    text.innerHTML = texts[textIndex];
-    textIndex = (textIndex + 1) % texts.length;
-
-    setTimeout(changeText, 3000); // Change text every 3 seconds
-}
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    type();
-});
-
-// dark.light modes 
-// script.js
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Check if a mode is stored in localStorage when the page loads
-    const savedMode = localStorage.getItem('theme');
-    
-    if (savedMode) {
-        // Apply the saved theme (light or dark) from localStorage
-        document.body.classList.add(savedMode);
-    }
-
-    // Add event listener to the mode button to toggle the mode
-    document.getElementById('theme-toggle').addEventListener('click', function() {
-        // Toggle between light-mode and no mode (dark by default)
-        if (document.body.classList.contains('light-mode')) {
-            document.body.classList.remove('light-mode');
-            localStorage.setItem('theme', ''); // Clear the theme from localStorage (dark mode is default)
+            if (charIndex < currentText.content.length) {
+                textElement.innerHTML += currentText.content.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeText, 100); // Typing speed
+            } else {
+                setTimeout(changeText, 3000); // Delay before changing text
+            }
         } else {
-            document.body.classList.add('light-mode');
-            localStorage.setItem('theme', 'light-mode'); // Store the light mode in localStorage
+            console.error('Text element (#p-text) not found!');
         }
-    });
+    }
+
+    function changeText() {
+        charIndex = 0;
+        textIndex = (textIndex + 1) % texts.length; // Cycle through texts
+        if (textElement) {
+            textElement.innerHTML = ''; // Clear text before typing the new one
+            typeText();
+        }
+    }
+
+    // Start the typing animation if the element exists
+    if (textElement) {
+        typeText();
+    } else {
+        console.error('Text element (#p-text) not found!');
+    }
+
+    /**
+     * Dark/Light Mode Toggle
+     */
+    const themeToggleButton = document.getElementById('theme-toggle');
+
+    if (themeToggleButton) {
+        // Load saved theme from localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light-mode') {
+            document.body.classList.add('light-mode'); // Apply light mode
+        }
+
+        // Add click event listener to toggle theme
+        themeToggleButton.addEventListener('click', function () {
+            if (document.body.classList.contains('light-mode')) {
+                document.body.classList.remove('light-mode'); // Switch to dark mode
+                localStorage.removeItem('theme'); // Remove theme from storage
+            } else {
+                document.body.classList.add('light-mode'); // Switch to light mode
+                localStorage.setItem('theme', 'light-mode'); // Save light mode
+            }
+        });
+    } else {
+        console.error('Theme toggle button (#theme-toggle) not found!');
+    }
 });
-
-
-
