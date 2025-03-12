@@ -2,6 +2,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Theme Initialization - Must be in head -->
+<script>
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light-mode') {
+        document.documentElement.classList.add('light-mode');
+    }
+})();
+</script>
 
 <!-- Page Title -->
 <title>{{ .Title }} | {{ .Site.Title }}</title>
