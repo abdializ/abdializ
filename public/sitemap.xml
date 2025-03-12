@@ -1,1 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://www.abdisalam.blog/</loc><lastmod>2024-12-30T19:10:12-06:00</lastmod></url><url><loc>https://www.abdisalam.blog/blog/</loc><lastmod>2024-12-30T14:06:58-06:00</lastmod></url><url><loc>https://www.abdisalam.blog/blog/2025/</loc><lastmod>2024-12-30T14:06:58-06:00</lastmod></url><url><loc>https://www.abdisalam.blog/tags/sir-abdisalam/</loc><lastmod>2024-12-30T14:06:58-06:00</lastmod></url><url><loc>https://www.abdisalam.blog/tags/</loc><lastmod>2024-12-30T14:06:58-06:00</lastmod></url><url><loc>https://www.abdisalam.blog/tags/free-writing/</loc><lastmod>2024-12-30T00:10:57-06:00</lastmod></url><url><loc>https://www.abdisalam.blog/blog/whynow/</loc><lastmod>2024-12-30T00:10:57-06:00</lastmod></url><url><loc>https://www.abdisalam.blog/blog/reflection/</loc><lastmod>2024-12-28T11:43:53-06:00</lastmod></url><url><loc>https://www.abdisalam.blog/projects/</loc><lastmod>2024-12-26T00:06:51-06:00</lastmod></url><url><loc>https://www.abdisalam.blog/about/</loc><lastmod>2024-12-25T20:58:06-06:00</lastmod></url><url><loc>https://www.abdisalam.blog/blog/firstblog-post/</loc></url><url><loc>https://www.abdisalam.blog/tags/books/</loc></url><url><loc>https://www.abdisalam.blog/categories/</loc></url><url><loc>https://www.abdisalam.blog/books/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:62165/manu/</loc>
+    <lastmod>2024-12-30T19:10:12-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62165/</loc>
+    <lastmod>2024-12-30T19:10:12-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62165/blog/</loc>
+    <lastmod>2024-12-30T14:06:58-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62165/blog/2025/</loc>
+    <lastmod>2024-12-30T14:06:58-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62165/tags/sir-abdisalam/</loc>
+    <lastmod>2024-12-30T14:06:58-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62165/tags/</loc>
+    <lastmod>2024-12-30T14:06:58-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62165/tags/free-writing/</loc>
+    <lastmod>2024-12-30T00:10:57-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62165/blog/whynow/</loc>
+    <lastmod>2024-12-30T00:10:57-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62165/blog/reflection/</loc>
+    <lastmod>2024-12-28T11:43:53-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62165/projects/</loc>
+    <lastmod>2024-12-26T00:06:51-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62165/about/</loc>
+    <lastmod>2024-12-25T20:58:06-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62165/blog/firstblog-post/</loc>
+  </url><url>
+    <loc>http://localhost:62165/tags/books/</loc>
+  </url><url>
+    <loc>http://localhost:62165/categories/</loc>
+  </url><url>
+    <loc>http://localhost:62165/books/</loc>
+  </url>
+</urlset>

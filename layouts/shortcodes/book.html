@@ -3,12 +3,4 @@
 {{ $hasQuickThought := .Get "hasQuickThought" | default false }}
 {{ $blogPostLink := .Get "blogPostLink" | default "#" }}
 
-<div class="book-entry{{ if $hasBlogPost }} has-blog-post{{ end }}">
-  {{ if $hasBlogPost }}
-    <a href="{{ $blogPostLink }}" class="book-link">
-      {{ $title }}{{ if $hasQuickThought }}**{{ end }}
-    </a>
-  {{ else }}
-    <span>{{ $title }}{{ if $hasQuickThought }}**{{ end }}</span>
-  {{ end }}
-</div>
+• {{ if $hasBlogPost }}<a class="book-link" href="{{ $blogPostLink }}">{{ $title }}</a>{{ else }}{{ $title }}{{ end }}{{ if $hasQuickThought }} **{{ end }}
