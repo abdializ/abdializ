@@ -4,7 +4,9 @@ description = "These are books I've read. The Gold colored (Blue in Light Mode) 
 tags = ["Books"]
 +++
 
-
+{{% book title="The Brothers Karamazov" hasBlogPost=true blogPostLink="/blog/whynow" %}}
+{{% book title="Crime and Punishment" hasQuickThought=true %}}
+{{% book title="Notes from Underground" %}}
 
     
 
