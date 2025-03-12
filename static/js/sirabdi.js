@@ -1,18 +1,23 @@
 // Theme toggle functionality
 document.addEventListener('DOMContentLoaded', function() {
     const themeToggleButton = document.getElementById('theme-toggle');
-    if (!themeToggleButton) return;
+    if (themeToggleButton) {
+        themeToggleButton.addEventListener('click', function() {
+            const body = document.body;
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                localStorage.removeItem('theme');
+            } else {
+                body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light-mode');
+            }
+        });
 
-    themeToggleButton.addEventListener('click', function() {
-        const isLightMode = document.documentElement.classList.contains('light-mode');
-        if (isLightMode) {
-            document.documentElement.classList.remove('light-mode');
-            localStorage.removeItem('theme');
-        } else {
-            document.documentElement.classList.add('light-mode');
-            localStorage.setItem('theme', 'light-mode');
+        // Set initial theme
+        if (localStorage.getItem('theme') === 'light-mode') {
+            document.body.classList.add('light-mode');
         }
-    });
+    }
 });
 
 // Typing animation - only on pages with p-text element
