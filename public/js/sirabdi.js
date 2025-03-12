@@ -70,4 +70,4 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Theme toggle button (#theme-toggle) not found!');
     }
   
-
+})
