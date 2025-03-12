@@ -43,6 +43,11 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   unicode-bidi: isolate;
+  color: #928585;
+}
+
+body.light-mode p {
+  color: #0a1f44;
 }
 
 img {
@@ -74,13 +79,21 @@ img {
   font-weight: bold;
 }
 
+/* Tag title styling */
 .tag-title {
   text-align: left;
   text-decoration: none;
+  color: #928585;
 }
 
 .tag-title a {
   text-decoration: none;
+  color: #928585;
+}
+
+body.light-mode .tag-title,
+body.light-mode .tag-title a {
+  color: #0a1f44;
 }
 
 .tag-title {
@@ -88,7 +101,7 @@ img {
 }
 
 .tag-title:hover {
-  transform: scale(1.05); /* Slightly increase the size */
+  transform: scale(1.05);
 }
 
 #abdisalam-sharif-ali {
@@ -150,20 +163,68 @@ img {
 }
 
 /* Light Mode */
-body.light-mode .checkbox {
-  color: #40280b;
+body.light-mode {
+  background-color: #fff1e1;
+  color: #0a1f44; /* Dark blue color for text */
 }
 
+/* Update headings in light mode */
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6 {
+  color: #0a1f44;
+}
+
+/* Update other light mode text colors */
+body.light-mode .posts-list h5,
+body.light-mode div.blog-tags,
+body.light-mode pre,
+body.light-mode .xyz,
+body.light-mode .container h6,
+body.light-mode .toc,
+body.light-mode .site-header,
+body.light-mode .navbar {
+  color: #0a1f44 !important;
+}
+
+/* Default link color for both light and dark modes */
+a {
+  color: #ffb255;
+  text-decoration: none;
+}
+
+/* Light mode link color - keeping gold */
+body.light-mode a {
+  color: #ffb255;
+}
+
+/* Book section specific styles */
+.book-entry a {
+  color: #ffb255;
+}
+
+body.light-mode .book-entry a {
+  color: #0a1f44; /* Dark blue for book links in light mode */
+}
+
+.book-link {
+  color: #ffb255;
+}
+
+body.light-mode .book-link {
+  color: #0a1f44; /* Dark blue for book links in light mode */
+}
+
+/* Box and checkbox styles */
 body.light-mode .box {
-  border: 1px solid #40280b; /* Blue border */
+  border: 1px solid #0a1f44;
 }
 
-blockquote {
-  border-left: #928585 solid;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-  padding: 1rem 1rem 1rem 3rem;
-  margin: 2.3rem;
+body.light-mode .checkbox {
+  color: #0a1f44;
 }
 
 /* Reset some basic elements for a clean slate */
@@ -244,31 +305,37 @@ h1 {
   position: absolute;
   top: 20px;
   left: 20px;
-  background-color: var(--button-color); /* Purple color */
-  color: #948779; /* White text */
+  background-color: #090b09; /* Dark background in dark mode */
+  color: #948779; /* Text color */
   border: none;
-  border-radius: 10%; /* Rounded corners */
-  padding: 10px 20px; /* Padding for the button */
+  border-radius: 10%;
+  padding: 10px 20px;
   align-items: center;
   justify-content: center;
-  font-size: 2em; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  width: 120px; /* Set width */
+  font-size: 2em;
+  cursor: pointer;
+  width: 120px;
   line-height: 10px;
-  height: 50px; /* Set height */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
-  transition: background-color 0.2s ease, transform 0.4s ease; /* Smooth transitions */
+  height: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, transform 0.4s ease;
   z-index: 9999;
 }
 
 #theme-toggle:hover {
   font-family: "Times New Roman", Times, serif;
-  background-color: var(--button-color); /* Slightly lighter purple on hover */
-  transform: scale(1.2); /* Slightly larger on hover */
+  transform: scale(1.2);
 }
 
 #theme-toggle:active {
-  transform: scale(0.85); /* Slightly smaller when clicked */
+  transform: scale(0.85);
+}
+
+/* Light mode override for theme toggle */
+body.light-mode #theme-toggle {
+  background-color: #fff1e1;
+  color: #40280b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Natural flow and rhythm in articles by default */
@@ -279,12 +346,36 @@ article > * + * {
 article hr {
   margin-left: 0rem;
 }
+
+/* Article headings */
 article h1 {
   margin-left: 0rem;
+  color: #928585;
 }
 
+article h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #928585;
+}
+
+body.light-mode article h1,
+body.light-mode article h2 {
+  color: #0a1f44;
+}
+
+/* Article links */
 article a {
   text-decoration: none;
+  color: #ffb255;
+}
+
+body.light-mode article a {
+  color: #0a1f44;
+}
+
+article a:hover {
+  text-decoration: underline;
 }
 
 .site-header a {
@@ -663,4 +754,50 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Header and navigation links */
+.site-header a,
+.navbar a,
+.navbar .homelist li a {
+  text-decoration: none !important;
+}
+
+.site-header a:hover,
+.navbar a:hover,
+.navbar .homelist li a:hover {
+  text-decoration: none !important;
+}
+
+/* Default link styles */
+a {
+  color: #ffb255;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Book section specific styles */
+.book-entry a {
+  color: #ffb255;
+}
+
+body.light-mode .book-entry a {
+  color: #1a73e8;
+}
+
+/* Remove underline from site title and navigation */
+.top-title a,
+.top-title a:hover {
+  text-decoration: none !important;
+}
+
+blockquote {
+  border-left: #928585 solid;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  padding: 1rem 1rem 1rem 3rem;
+  margin: 2.3rem;
 }
