@@ -4,20 +4,22 @@ description = "These are books I've read. The Gold colored (Blue in Light Mode) 
 tags = ["Books"]
 +++
 
-
+## Philosophy
 1. <a href="/blog/whynow" class="has-blog-post" style="color: #ffb255 !important; text-decoration: underline !important;">The Brothers Karamazov</a>
 
-2. Atomic Habits <span class="quick-thought-indicator" style="color: #ffb255 !important; cursor: pointer; margin-left: 5px;" onclick="document.getElementById('atomic-habits-thoughts').style.display = document.getElementById('atomic-habits-thoughts').style.display === 'none' ? 'block' : 'none'">**</span>
-<div id="atomic-habits-thoughts" style="display: none; margin-left: 20px; padding-left: 10px; border-left: 2px solid #ffb255; font-size: 0.9em;">
-  <p>The 1% improvement principle is transformative over time. Identity-based habits are more sustainable than outcome-based ones. The four laws of behavior change provide a practical framework. Small habits compound into remarkable results.</p>
-</div>
+2. Meditations
 
-3. Meditations
-
-4. 48 Laws of Power
-
+## Non-Fiction
+1. Atomic Habits <span class="quick-thought-indicator" style="color: #ffb255 !important; cursor: pointer; margin-left: 5px;" onclick="document.getElementById('atomic-habits-thoughts').style.display = document.getElementById('atomic-habits-thoughts').style.display === 'none' ? 'block' : 'none'">**</span>
+   <div id="atomic-habits-thoughts" style="display: none; margin-left: 20px; padding-left: 10px; border-left: 2px solid #ffb255; font-size: 0.9em;">
+     <p>The 1% improvement principle is transformative over time. Identity-based habits are more sustainable than outcome-based ones. The four laws of behavior change provide a practical framework. Small habits compound into remarkable results.</p>
+   </div>
 
 
+2. 48 Laws of Power <span class="quick-thought-indicator" style="color: #ffb255 !important; cursor: pointer; margin-left: 5px;" onclick="document.getElementById('power-laws-thoughts').style.display = document.getElementById('power-laws-thoughts').style.display === 'none' ? 'block' : 'none'">**</span>
+   <div id="power-laws-thoughts" style="display: none; margin-left: 20px; padding-left: 10px; border-left: 2px solid #ffb255; font-size: 0.9em;">
+   <p>When I first read this book, I thought it was brilliant—strategic, insightful, and dangerously effective. But over time, I came to see it for what it truly is: a cold, calculated guide to power, often at the expense of morality. Some laws are undeniably useful, and when applied wisely, they can give you an edge in life. But the book itself? It's ruthless, even sinister at times. Still, I can't deny its impact. A solid 7.9/10—powerful, but not something I'd live by. </p>
+   </div>
 
 ---
 
