@@ -1,8 +1,10 @@
 +++
 title = "My Books"
-description = "These are books I've read. The Gold colored (Blue in Light Mode) have my thoughts written in a blog post. If the book name has a ** near it that means there is quick thought on it"
+description = "Who reads nowadays? Me! And these are my books"
 tags = ["Books"]
 +++
+
+*Note: Books with gold/blue coloring have detailed blog posts. Books marked with ** have quick thoughts. I am still working on this page :)*
 
 ## Philosophy
 1. <a href="/blog/whynow" class="has-blog-post" style="color: #ffb255 !important; text-decoration: underline !important;">The Brothers Karamazov</a>
@@ -21,9 +23,7 @@ tags = ["Books"]
    <p>When I first read this book, I thought it was brilliant—strategic, insightful, and dangerously effective. But over time, I came to see it for what it truly is: a cold, calculated guide to power, often at the expense of morality. Some laws are undeniably useful, and when applied wisely, they can give you an edge in life. But the book itself? It's ruthless, even sinister at times. Still, I can't deny its impact. A solid 7.9/10—powerful, but not something I'd live by. </p>
    </div>
 
----
 
-*Note: Books with gold/blue coloring have detailed blog posts. Books marked with ** have quick thoughts.*
 
 <style>
 /* Books with blog posts - gold in dark mode, blue in light mode */
