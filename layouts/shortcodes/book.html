@@ -2,5 +2,19 @@
 {{ $hasBlogPost := .Get "hasBlogPost" | default false }}
 {{ $hasQuickThought := .Get "hasQuickThought" | default false }}
 {{ $blogPostLink := .Get "blogPostLink" | default "#" }}
+{{ $quickThought := .Get "quickThought" | default "" }}
 
-• {{ if $hasBlogPost }}<a class="book-link" href="{{ $blogPostLink }}">{{ $title }}</a>{{ else }}{{ $title }}{{ end }}{{ if $hasQuickThought }} **{{ end }}
+<li>
+  {{ if $hasBlogPost }}
+    <a class="book-link" href="{{ $blogPostLink }}">{{ $title }}</a>
+  {{ else }}
+    {{ $title }}
+  {{ end }}
+  
+  {{ if $hasQuickThought }}
+    <span class="quick-thought-toggle" onclick="toggleThought(this)">**</span>
+    <div class="quick-thought-content" style="display: none;">
+      {{ $quickThought | markdownify }}
+    </div>
+  {{ end }}
+</li>
