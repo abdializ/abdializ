@@ -5,3 +5,9 @@ title = 'Sir Abdisalam | The Website'
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
+
+[server]
+  watch = false
+
+[build]
+  noJSConfigInAssets = true
