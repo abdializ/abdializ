@@ -247,6 +247,35 @@ body.light-mode .checkbox {
   --button-color: var(--background-color);
 }
 
+/* Dark mode explicit overrides */
+body:not(.light-mode) {
+  --text-color: #928585; /* Light gray for better readability */
+  --link-color: #ffb255; /* Keep gold color for links */
+}
+
+body:not(.light-mode) h1,
+body:not(.light-mode) h2,
+body:not(.light-mode) h3,
+body:not(.light-mode) h4,
+body:not(.light-mode) h5,
+body:not(.light-mode) h6,
+body:not(.light-mode) p,
+body:not(.light-mode) a {
+  color: var(--text-color) !important; /* Ensure it applies */
+}
+
+body:not(.light-mode) .spinning-a,
+body:not(.light-mode) .h1-text,
+body:not(.light-mode) .p-text {
+  color: var(--text-color) !important;
+}
+
+/* Ensure site title updates */
+body:not(.light-mode) .top-title h1,
+body:not(.light-mode) .top-title a {
+  color: var(--text-color) !important;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -800,4 +829,35 @@ blockquote {
   font-weight: bold;
   padding: 1rem 1rem 1rem 3rem;
   margin: 2.3rem;
+}
+
+/* Core light mode styles - ensure these have high specificity */
+html body.light-mode {
+  background-color: #fff1e1 !important;
+  color: #0a1f44 !important;
+}
+
+/* Ensure all containers inherit the background color */
+body.light-mode .container,
+body.light-mode .wrapper,
+body.light-mode .content,
+body.light-mode main,
+body.light-mode article,
+body.light-mode section,
+body.light-mode .xyz,
+body.light-mode #container,
+body.light-mode .about-page,
+body.light-mode .about-content {
+  background-color: inherit !important;
+}
+
+/* Ensure the toggle button has the correct styles */
+body.light-mode #theme-toggle {
+  background-color: #fff1e1 !important;
+  color: #40280b !important;
+}
+
+body:not(.light-mode) #theme-toggle {
+  background-color: #090b09 !important;
+  color: #948779 !important;
 }

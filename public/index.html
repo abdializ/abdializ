@@ -4,6 +4,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+<script>
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light-mode') {
+        document.documentElement.classList.add('light-mode');
+    }
+})();
+</script>
+
+
 <title>Sir Abdisalam | The Website | Sir Abdisalam | The Website</title>
 
 
@@ -50,7 +60,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sir Abdisalam | The Website</title>
     <link rel="stylesheet" href="/sirabdi.css">
-    <script src="/js/sirabdi.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon34.ico">
 </head>
 <body>
