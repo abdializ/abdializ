@@ -702,7 +702,7 @@ a {
 }
 
 .book-entry::before {
-  content: "•";
+  content: "1. ";
   position: absolute;
   left: 1rem;
   color: var(--text-color);
@@ -860,4 +860,33 @@ body.light-mode #theme-toggle {
 body:not(.light-mode) #theme-toggle {
   background-color: #090b09 !important;
   color: #948779 !important;
+}
+
+/* Quick thoughts styling */
+.quick-thought-toggle {
+  cursor: pointer;
+  color: #ffb255;
+  margin-left: 5px;
+}
+
+body.light-mode .quick-thought-toggle {
+  color: #1a73e8;
+}
+
+.quick-thought-content {
+  margin: 0.5rem 0 0.5rem 1rem;
+  padding: 0.5rem;
+  border-left: 2px solid #ffb255;
+  font-size: 0.85em;
+  color: #928585;
+  max-width: 80%;
+}
+
+body.light-mode .quick-thought-content {
+  border-left-color: #1a73e8;
+  color: #0a1f44;
+}
+
+.quick-thought-content.visible {
+  display: block !important;
 }

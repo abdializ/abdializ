@@ -115,3 +115,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     typeText(); // Start the typing animation
 });
+
+// Function to toggle quick thoughts visibility
+function toggleThought(element) {
+    // Find the next sibling that has the quick-thought-content class
+    const thoughtContent = element.nextElementSibling;
+    
+    // Toggle the visibility
+    if (thoughtContent.style.display === 'block') {
+        thoughtContent.style.display = 'none';
+    } else {
+        thoughtContent.style.display = 'block';
+    }
+}
+
