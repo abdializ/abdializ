@@ -2,20 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-03-14T00:50:53-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-30T19:10:12-06:00</lastmod>
+    <lastmod>2025-03-14T00:50:53-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2024-12-30T14:06:58-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/2025/</loc>
-    <lastmod>2024-12-30T14:06:58-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sir-abdisalam/</loc>
-    <lastmod>2024-12-30T14:06:58-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-12-30T14:06:58-06:00</lastmod>
+    <lastmod>2024-12-30T00:10:57-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/free-writing/</loc>
     <lastmod>2024-12-30T00:10:57-06:00</lastmod>
@@ -23,7 +17,13 @@
     <loc>http://localhost:1313/blog/whynow/</loc>
     <lastmod>2024-12-30T00:10:57-06:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-12-30T00:10:57-06:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blog/reflection/</loc>
+    <lastmod>2024-12-28T11:43:53-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sir-abdisalam/</loc>
     <lastmod>2024-12-28T11:43:53-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
@@ -31,6 +31,18 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-12-25T20:58:06-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/desire/</loc>
+    <lastmod>2024-03-14T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/desire-evil/</loc>
+    <lastmod>2024-03-14T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/evil/</loc>
+    <lastmod>2024-03-14T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/philosophy/</loc>
+    <lastmod>2024-03-14T12:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/firstblog-post/</loc>
   </url><url>
