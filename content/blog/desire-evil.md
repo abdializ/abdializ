@@ -1,9 +1,9 @@
 +++
-title = "Desire and Evil"
+title = "Desire and it's Nature"
 date = 2024-03-14T12:00:00Z
 draft = false
 tags = ["Desire", "Evil", "Philosophy"]
-description = "Exploring the concepts of desire and evil in human nature."
+description = "This is my honest thought on Desire, my journy with it, and how I view it"
 +++
 
 <div style="text-align: center; font-style: italic; margin: 30px 0;">
