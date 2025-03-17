@@ -890,3 +890,11 @@ body.light-mode .quick-thought-content {
 .quick-thought-content.visible {
   display: block !important;
 }
+
+.article h6 {
+  font-size: 1em; /* it seems pretty normal to me for now this size */
+  margin-top: 1.2em;
+  margin-bottom: 0.8em;
+  color: #928585;
+  font-weight: normal;
+}
