@@ -1,6 +1,6 @@
 +++
 title = "Desire and it's Nature"
-date = 2024-03-14T12:00:00Z
+date = 2025-03-14T12:00:00Z
 draft = false
 tags = ["Desire", "Evil", "Philosophy"]
 description = "This is my honest thought on desire, my journey with it, and how I view it"
