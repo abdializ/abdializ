@@ -6,8 +6,15 @@
     <description>Recent content on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Dec 2024 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Mar 2025 12:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Desire and it&#39;s Nature</title>
+      <link>http://localhost:1313/blog/desire-evil/</link>
+      <pubDate>Fri, 14 Mar 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/desire-evil/</guid>
+      <description>&lt;div style=&#34;text-align: center; font-style: italic; margin: 30px 0;&#34;&gt;&#xA;&#34;The chains of habit are too weak to be felt until they are too strong to be broken.&#34;&lt;br&gt;&#xA;— Samuel Johnson&#xA;&lt;/div&gt;&#xA;&lt;p&gt;Recently, I have been thinking if my desires-good or bad-control me? Desire. It really is one of the greatest walls standing between a man and his own peace. Not all desires are evil, but the moment they become the master, the soul begins to rot. I have come to see more recently, there is something deceptive about it, the way it starts as a whisper—gentle, almost harmless. A itching for ease, for pleasure, for something just out of reach. It does not force itself upon you; it only asks. Wouldn&amp;rsquo;t it be easier? Wouldn&amp;rsquo;t it be nice? What harm is there in just this once? Or What if I just&amp;hellip;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My 2025 Checklist</title>
       <link>http://localhost:1313/blog/2025-checklist/</link>
@@ -44,13 +51,6 @@
       <description>&lt;h2 id=&#34;abdisalam-sharif-ali&#34;&gt;Abdisalam Sharif Ali&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/cam.png&#34; alt=&#34;abdi&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Well&amp;hellip; Welcome!&#xA;I&amp;rsquo;m a lover of books-classical ones mostly-a runner at heart, and someone who&amp;rsquo;s never shy about speaking my mind. If there&amp;rsquo;s one thing you should know about me, it&amp;rsquo;s that I believe in standing up for what I think is right-and doing something about it.&lt;/p&gt;&#xA;&lt;p&gt;I am in love with trying to bring education everywhere (pretty crazy that isn&amp;rsquo;t the case). I&amp;rsquo;m also a huge fan of the journalism industry and believe that traditional journalism is dying at the expense of money and greed (but I&amp;rsquo;ll probably go on and on about this in a blog post later).&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Desire and Evil</title>
-      <link>http://localhost:1313/blog/desire-evil/</link>
-      <pubDate>Thu, 14 Mar 2024 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/desire-evil/</guid>
-      <description>&lt;div style=&#34;text-align: center; font-style: italic; margin: 30px 0;&#34;&gt;&#xA;&#34;The chains of habit are too weak to be felt until they are too strong to be broken.&#34;&lt;br&gt;&#xA;— Samuel Johnson&#xA;&lt;/div&gt;&#xA;&lt;p&gt;Recently, I have been thinking if my desires-good or bad-control me? Desire. It really is one of the greatest walls standing between a man and his own peace. Not all desires are evil, but the moment they become the master, the soul begins to rot. I have come to see more recently, there is something deceptive about it, the way it starts as a whisper—gentle, almost harmless. A itching for ease, for pleasure, for something just out of reach. It does not force itself upon you; it only asks. Wouldn&amp;rsquo;t it be easier? Wouldn&amp;rsquo;t it be nice? What harm is there in just this once? Or What if I just&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title></title>
       <link>http://localhost:1313/blog/firstblog-post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -63,6 +63,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/books/</guid>
       <description>&lt;p&gt;&lt;em&gt;Note: Books with gold/blue coloring have detailed blog posts. Books marked with ** have quick thoughts. I am still working on this page :)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;philosophy&#34;&gt;Philosophy&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/blog/whynow&#34; class=&#34;has-blog-post&#34; style=&#34;color: #ffb255 !important; text-decoration: underline !important;&#34;&gt;The Brothers Karamazov&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Meditations&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The Metamorphosis&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The Judgement (Das Uretil, 1913)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;non-fiction&#34;&gt;Non-Fiction&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Atomic Habits &lt;span class=&#34;quick-thought-indicator&#34; style=&#34;color: #ffb255 !important; cursor: pointer; margin-left: 5px;&#34; onclick=&#34;document.getElementById(&#39;atomic-habits-thoughts&#39;).style.display = document.getElementById(&#39;atomic-habits-thoughts&#39;).style.display === &#39;none&#39; ? &#39;block&#39; : &#39;none&#39;&#34;&gt;**&lt;/span&gt;&lt;/p&gt;&#xA;&lt;div id=&#34;atomic-habits-thoughts&#34; style=&#34;display: none; margin-left: 20px; padding-left: 10px; border-left: 2px solid #ffb255; font-size: 0.9em;&#34;&gt;&#xA;  &lt;p&gt;The 1% improvement principle is transformative over time. Identity-based habits are more sustainable than outcome-based ones. The four laws of behavior change provide a practical framework. Small habits compound into remarkable results.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Other</title>
+      <link>http://localhost:1313/other/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/other/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

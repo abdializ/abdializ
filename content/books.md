@@ -35,12 +35,12 @@ tags = ["Books"]
 
   2. Love from A to Z - S.K Ali <span class="quick-thought-indicator" style="color: #ffb255 !important; cursor: pointer; margin-left: 5px;" onclick="document.getElementById('az-skali-thoughts').style.display = document.getElementById('az-skali-thoughts').style.display === 'none' ? 'block' : 'none'">**</span>
    <div id="az-skali-thoughts" style="display: none; margin-left: 20px; padding-left: 10px; border-left: 2px solid #ffb255; font-size: 0.9em;">
-   <p>I read this back one I was about 14, it was a good read at the time!! </p>
+   <p>I read this back when I was about 14, it was a good read at the time!! </p>
    </div>
 
   3. Frankenstein: The 1818 Text - Mary Shelly  <span class="quick-thought-indicator" style="color: #ffb255 !important; cursor: pointer; margin-left: 5px;" onclick="document.getElementById('fran-mary-thoughts').style.display = document.getElementById('fran-mary-thoughts').style.display === 'none' ? 'block' : 'none'">**</span>
    <div id="fran-mary-thoughts" style="display: none; margin-left: 20px; padding-left: 10px; border-left: 2px solid #ffb255; font-size: 0.9em;">
-   <p>I always loved the movies and live action version of this story, and I almost put it in philsophy, because it is quite a philsopical read, but it just amazing work of fiction honestly. </p>
+   <p>I always loved the movies and live action version of this story, and I almost put it in the philsophy section, because it is quite a philsopical read, but it just amazing work of fiction honestly. </p>
    </div>
 
    
