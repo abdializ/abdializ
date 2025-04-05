@@ -899,44 +899,24 @@ body.light-mode .quick-thought-content {
   font-weight: normal;
 }
 
-/* Mobile-friendly navbar adjustments */
 @media (max-width: 768px) {
   .navbar .homelist {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 10px;
     padding: 0;
+    margin: 0;
+    overflow-x: auto;
   }
 
   .navbar .homelist li {
-    margin: 5px;
-    display: inline-block;
+    white-space: nowrap;
+    margin: 0 0px;
   }
 
   .navbar .homelist li a {
-    font-size: 1.1em;
-    padding: 5px 8px;
-    display: inline-block;
-  }
-}
-
-/* For very small screens like iPhone SE */
-@media (max-width: 375px) {
-  .navbar .homelist {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar .homelist li {
-    margin: 3px 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar .homelist li a {
-    font-size: 1em;
-    width: 100%;
     display: block;
+    font-size: 0.2em; /* Smaller font size */
+    padding: 4px 0px; /* Adjust padding as needed */
   }
 }

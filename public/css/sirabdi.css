@@ -898,3 +898,25 @@ body.light-mode .quick-thought-content {
   color: #928585;
   font-weight: normal;
 }
+
+@media (max-width: 768px) {
+  .navbar .homelist {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+  }
+
+  .navbar .homelist li {
+    white-space: nowrap;
+    margin: 0 0px;
+  }
+
+  .navbar .homelist li a {
+    display: block;
+    font-size: 0.2em; /* Smaller font size */
+    padding: 4px 0px; /* Adjust padding as needed */
+  }
+}
