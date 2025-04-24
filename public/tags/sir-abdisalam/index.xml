@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sir Abdisalam on Sir Abdisalam | The Website</title>
-    <link>http://10.0.0.163:1313/tags/sir-abdisalam/</link>
+    <link>http://localhost:1313/tags/sir-abdisalam/</link>
     <description>Recent content in Sir Abdisalam on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2024 11:43:53 -0600</lastBuildDate>
-    <atom:link href="http://10.0.0.163:1313/tags/sir-abdisalam/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/sir-abdisalam/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024 Reflection</title>
-      <link>http://10.0.0.163:1313/blog/reflection/</link>
+      <link>http://localhost:1313/blog/reflection/</link>
       <pubDate>Sat, 28 Dec 2024 11:43:53 -0600</pubDate>
-      <guid>http://10.0.0.163:1313/blog/reflection/</guid>
+      <guid>http://localhost:1313/blog/reflection/</guid>
       <description>&lt;p&gt;2024 . What a year it was. The start of the year was epic, I had so much motivation to go do it all but as the year went by that motivation went away slowly. Which is why the quote&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Thinking is easy, acting is difficult, and to put one’s thoughts into action is the most difficult thing in the world.&amp;rdquo; &amp;ndash; Johann Wolfgang von Goethe&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Really hits the head now, looking back throughout the year. I found myself casually flying through specific months, and that specific motivation I once had in January seemed more of a ghost of my thoughts. It really is easy to THINK, but to DO—this is truly what isn’t easy. But I must give myself credit; this year, I have taken lessons and wrote them down in my core memory. Also what is a year without lesson ay?&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://10.0.0.163:1313/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 25 Dec 2024 20:58:06 -0600</pubDate>
-      <guid>http://10.0.0.163:1313/about/</guid>
-      <description>&lt;h2 id=&#34;abdisalam-sharif-ali&#34;&gt;Abdisalam Sharif Ali&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://10.0.0.163:1313/images/cam.png&#34; alt=&#34;abdi&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Well&amp;hellip; Welcome!&#xA;I&amp;rsquo;m a lover of books-classical ones mostly-a runner at heart, and someone who&amp;rsquo;s never shy about speaking my mind. If there&amp;rsquo;s one thing you should know about me, it&amp;rsquo;s that I believe in standing up for what I think is right-and doing something about it.&lt;/p&gt;&#xA;&lt;p&gt;I am in love with trying to bring education everywhere (pretty crazy that isn&amp;rsquo;t the case). I&amp;rsquo;m also a huge fan of the journalism industry and believe that traditional journalism is dying at the expense of money and greed (but I&amp;rsquo;ll probably go on and on about this in a blog post later).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;abdisalam-sharif-ali&#34;&gt;Abdisalam Sharif Ali&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/cam.png&#34; alt=&#34;abdi&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Well&amp;hellip; Welcome!&#xA;I&amp;rsquo;m a lover of books-classical ones mostly-a runner at heart, and someone who&amp;rsquo;s never shy about speaking my mind. If there&amp;rsquo;s one thing you should know about me, it&amp;rsquo;s that I believe in standing up for what I think is right-and doing something about it.&lt;/p&gt;&#xA;&lt;p&gt;I am in love with trying to bring education everywhere (pretty crazy that isn&amp;rsquo;t the case). I&amp;rsquo;m also a huge fan of the journalism industry and believe that traditional journalism is dying at the expense of money and greed (but I&amp;rsquo;ll probably go on and on about this in a blog post later).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
