@@ -1,6 +1,7 @@
 +++
 title = "Projects"
-description = ""
+description = "This is where I list some of my projects, Although I am probably going to list the most recent ones"
+date = 2025-04-18T19:10:12-06:00
 tags = [""]
 +++
 

@@ -50,9 +50,6 @@
     <loc>http://localhost:1313/tags/sir-abdisalam/</loc>
     <lastmod>2024-12-28T11:43:53-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2024-12-26T00:06:51-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-12-25T20:58:06-06:00</lastmod>
   </url><url>
@@ -65,5 +62,7 @@
     <loc>http://localhost:1313/books/</loc>
   </url><url>
     <loc>http://localhost:1313/other/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
   </url>
 </urlset>
