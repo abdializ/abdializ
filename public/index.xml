@@ -6,8 +6,22 @@
     <description>Recent content on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Apr 2025 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 00:00:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Desire and Its Nature Pt 3 : Discipline</title>
+      <link>http://localhost:1313/blog/desire-pt3/</link>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/desire-pt3/</guid>
+      <description>&lt;div style=&#34;text-align: center; font-style: italic; margin: 30px 0;&#34;&gt;&#xA;&#34;The soul in its early stages is like a rebellious horse. If not trained, it will never obey you.&#34;&lt;br&gt;&#xA;— Ibn Qayyim al-Jawziyya&#xA;&lt;/div&gt;&#xA;&lt;p&gt;I think the more I reflect on this series, the more I realize how little I actually knew about desire when I first started writing it all. It seemed like something simple at the start. A feeling really only. Something that could either be ignored or acted on. But now, after sitting with it, questioning , &lt;i&gt;if i really wanted this&lt;/i&gt;, falling to it sometimes and trying to rise again. The act of wanting, and that of wanting new things, which I mentioned in the last part, is what desire is—if not controlled with discipline, NOT pure motivation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Fri, 18 Apr 2025 19:10:12 -0600</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;h2 id=&#34;game-theory-simulation---april-6th-2025&#34;&gt;Game Theory Simulation - April 6th 2025&lt;/h2&gt;&#xA;&lt;p&gt;After searching for a game theory simulation that wasn&amp;rsquo;t just educational but actually allowed competitive play, I couldn&amp;rsquo;t find one that fit. Most were limited to static demos or textbook-style visuals. So, I started building my own version of the classic Prisoner&amp;rsquo;s Dilemma as a side project. This is version 1, with support for both multiplayer over a local network and singleplayer versus a bot. I plan to improve it over time, but I&amp;rsquo;m publishing this first iteration on GitHub soon as a reference for anyone interested.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Desire and Its Nature – Pt. 2</title>
       <link>http://localhost:1313/blog/desire-nature-pt2/</link>
@@ -70,13 +84,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/other/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
-      <description>&lt;h2 id=&#34;game-theory-simulation---april-17-2024&#34;&gt;Game Theory Simulation - April 17 2024&lt;/h2&gt;&#xA;&lt;p&gt;After searching for a game theory simulation that wasn&amp;rsquo;t just educational but actually allowed competitive play, I couldn&amp;rsquo;t find one that fit. Most were limited to static demos or textbook-style visuals. So, I started building my own version of the classic Prisoner&amp;rsquo;s Dilemma as a side project. This is version 1, with support for both multiplayer over a local network and singleplayer versus a bot. I plan to improve it over time, but I&amp;rsquo;m publishing this first iteration on GitHub soon as a reference for anyone interested.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
