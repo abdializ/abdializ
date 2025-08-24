@@ -1,21 +1,64 @@
 {{ define "main" }}
 <div class="container" role="main">
-    <div class="posts-list">
+  <div class="blog-header">
+    <h1 class="blog-title">{{ .Title | title }}</h1>
+    <p class="blog-subtitle">Posts tagged with "{{ .Title | title }}"</p>
+  </div>
 
-    <!-- Title -->
-    <h5>Tag: {{ .Title }}</h5>
+  <div class="blog-stats">
+    <p class="post-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}</p>
+  </div>
 
-    {{ $name := .Title }}
-    <!-- List All Posts -->
-    {{ range sort .Data.Pages }}
-        <h2 class="tag-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        {{ $wordCount := len (split .Content " ") }}
-        {{ if and .Date (gt $wordCount 20) }}
-          {{ $readingTime := div $wordCount 150 }}
-          
+  <!-- Back to all posts -->
+  <div style="text-align: center; margin-bottom: 2rem;">
+    <a href="/blog/" class="back-to-blog">← View all posts</a>
+  </div>
+
+  <div class="posts-list">
+    {{ range .Pages.ByDate.Reverse }}
+    <article class="post-preview">
+      <div class="post-meta">
+        {{ if .Date }}
+        <time class="post-date" datetime="{{ .Date.Format " 2006-01-02" }}">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </time>
         {{ end }}
-        <p>{{ .Description }}</p>
+
+        {{ $wordCount := len (split .Content " ") }}
+        {{ if gt $wordCount 20 }}
+        {{ $readingTime := div $wordCount 150 }}
+        {{ if lt $readingTime 1 }}
+        {{ $readingTime = 1 }}
+        {{ end }}
+        <span class="reading-time">{{ $readingTime }} min read</span>
+        {{ end }}
+      </div>
+
+      <h2 class="post-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+
+      {{ if .Params.description }}
+      <p class="post-description">{{ .Params.description }}</p>
+      {{ else }}
+      <p class="post-description">{{ .Content | plainify | truncate 150 }}</p>
+      {{ end }}
+
+      {{ if .Params.tags }}
+      <div class="post-tags">
+        {{ range .Params.tags }}
+        <a href="/tags/{{ urlize (lower .) }}/" class="post-tag">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </article>
     {{ end }}
-    </div>
+  </div>
+
+  {{ if eq (len .Pages) 0 }}
+  <div class="no-posts">
+    <p>No posts found with this tag.</p>
+  </div>
+  {{ end }}
 </div>
 {{ end }}

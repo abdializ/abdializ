@@ -1,19 +1,19 @@
 // Theme toggle functionality with direct style manipulation
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM loaded, looking for theme toggle button');
-    
+
     const themeToggleButton = document.getElementById('theme-toggle');
     console.log('Theme toggle button found:', !!themeToggleButton);
-    
+
     if (themeToggleButton) {
         // Add a click event with logging
-        themeToggleButton.addEventListener('click', function(e) {
+        themeToggleButton.addEventListener('click', function (e) {
             console.log('Button clicked');
             e.preventDefault(); // Prevent any default action
-            
+
             const isCurrentlyLight = document.body.classList.contains('light-mode');
             console.log('Current mode is light:', isCurrentlyLight);
-            
+
             if (isCurrentlyLight) {
                 // Switch to dark mode
                 document.body.classList.remove('light-mode');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set initial theme with logging
         const savedTheme = localStorage.getItem('theme');
         console.log('Saved theme:', savedTheme);
-        
+
         if (savedTheme === 'light-mode') {
             document.body.classList.add('light-mode');
             document.body.style.backgroundColor = '#fff1e1';
@@ -55,13 +55,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // New typing animation approach
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const textElement = document.getElementById('p-text');
     if (!textElement) return;
 
     // Clear any existing content first
     textElement.innerHTML = '';
-    
+
     // Create a placeholder that will always be there but invisible
     const placeholder = document.createElement('span');
     placeholder.textContent = 'Under Construction'; // Use the longest text as placeholder
@@ -69,15 +69,15 @@ document.addEventListener('DOMContentLoaded', function() {
     placeholder.style.position = 'absolute';
     placeholder.style.height = '0';
     placeholder.style.overflow = 'hidden';
-    
+
     // Create a span for the actual text
     const textSpan = document.createElement('span');
     textSpan.style.display = 'inline-block';
-    
+
     // Add both to the p-text element
     textElement.appendChild(placeholder);
     textElement.appendChild(textSpan);
-    
+
     // Make sure the container has the right styles
     textElement.style.position = 'relative';
     textElement.style.display = 'block';
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function toggleThought(element) {
     // Find the next sibling that has the quick-thought-content class
     const thoughtContent = element.nextElementSibling;
-    
+
     // Toggle the visibility
     if (thoughtContent.style.display === 'block') {
         thoughtContent.style.display = 'none';

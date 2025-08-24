@@ -2,7 +2,7 @@
 title = "Desire and Its Nature Pt 3 : Discipline"
 description = "This is my last part of the desire and its nature writing, it has been a very reflective I would say"
 date = 2025-06-03T00:00:00-05:00
-tags = ["desire", "philsophy"]
+tags = ["Desire", "Philosophy"]
 draft = false
 +++
 

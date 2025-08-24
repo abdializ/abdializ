@@ -1,0 +1,20 @@
+{{/*
+This partial normalizes tags by:
+1. Converting to lowercase for comparison
+2. Using the first occurrence's capitalization as the canonical form
+3. Returning a slice of unique, normalized tags
+*/}}
+
+{{ $normalizedTags := slice }}
+{{ $tagMap := dict }}
+
+{{ range . }}
+{{ $lowerTag := lower . }}
+{{ if not (index $tagMap $lowerTag) }}
+{{/* Use the first occurrence's capitalization as canonical */}}
+{{ $tagMap = merge $tagMap (dict $lowerTag .) }}
+{{ $normalizedTags = $normalizedTags | append . }}
+{{ end }}
+{{ end }}
+
+{{ return ($normalizedTags | sort) }}

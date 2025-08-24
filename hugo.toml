@@ -2,6 +2,9 @@ baseURL = 'https://www.abdisalam.blog/'
 languageCode = 'en-us'
 title = 'Sir Abdisalam | The Website'
 
+[taxonomies]
+  tag = "tags"
+
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
