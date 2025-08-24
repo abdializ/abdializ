@@ -2,75 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:56459/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-06-03T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/tags/desire/</loc>
+    <loc>http://localhost:1313/tags/desire/</loc>
     <lastmod>2025-06-03T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/blog/desire-pt3/</loc>
+    <loc>http://localhost:1313/blog/desire-pt3/</loc>
     <lastmod>2025-06-03T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/tags/philosophy/</loc>
+    <loc>http://localhost:1313/tags/philosophy/</loc>
     <lastmod>2025-06-03T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-06-03T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-06-03T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2025-04-18T19:10:12-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/blog/desire-nature-pt2/</loc>
+    <loc>http://localhost:1313/blog/desire-nature-pt2/</loc>
     <lastmod>2025-04-03T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/tags/self-reflection/</loc>
+    <loc>http://localhost:1313/tags/self-reflection/</loc>
     <lastmod>2025-04-03T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/blog/desire-evil/</loc>
+    <loc>http://localhost:1313/blog/desire-evil/</loc>
     <lastmod>2025-03-14T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/tags/evil/</loc>
+    <loc>http://localhost:1313/tags/evil/</loc>
     <lastmod>2025-03-14T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/posts/desire-evil/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-03-14T00:50:53-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/posts/</loc>
-    <lastmod>2025-03-14T00:50:53-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:56459/manu/</loc>
-    <lastmod>2024-12-30T19:10:12-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:56459/blog/2025-checklist/</loc>
+    <loc>http://localhost:1313/blog/2025-checklist/</loc>
     <lastmod>2024-12-30T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/tags/personal/</loc>
+    <loc>http://localhost:1313/tags/personal/</loc>
     <lastmod>2024-12-30T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/tags/free-writing/</loc>
+    <loc>http://localhost:1313/tags/free-writing/</loc>
     <lastmod>2024-12-30T00:10:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/blog/whynow/</loc>
+    <loc>http://localhost:1313/blog/whynow/</loc>
     <lastmod>2024-12-30T00:10:57-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/blog/reflection/</loc>
+    <loc>http://localhost:1313/blog/reflection/</loc>
     <lastmod>2024-12-28T11:43:53-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/tags/sir-abdisalam/</loc>
+    <loc>http://localhost:1313/tags/sir-abdisalam/</loc>
     <lastmod>2024-12-28T11:43:53-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-12-25T20:58:06-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:56459/blog/firstblog-post/</loc>
+    <loc>http://localhost:1313/blog/firstblog-post/</loc>
   </url><url>
-    <loc>http://localhost:56459/tags/books/</loc>
+    <loc>http://localhost:1313/tags/books/</loc>
   </url><url>
-    <loc>http://localhost:56459/books/</loc>
+    <loc>http://localhost:1313/books/</loc>
   </url><url>
-    <loc>http://localhost:56459/other/</loc>
+    <loc>http://localhost:1313/other/</loc>
   </url>
 </urlset>

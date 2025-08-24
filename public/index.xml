@@ -2,101 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sir Abdisalam | The Website</title>
-    <link>http://localhost:56459/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Jun 2025 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:56459/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Desire and Its Nature Pt 3 : Discipline</title>
-      <link>http://localhost:56459/blog/desire-pt3/</link>
+      <link>http://localhost:1313/blog/desire-pt3/</link>
       <pubDate>Tue, 03 Jun 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:56459/blog/desire-pt3/</guid>
+      <guid>http://localhost:1313/blog/desire-pt3/</guid>
       <description>&lt;div style=&#34;text-align: center; font-style: italic; margin: 30px 0;&#34;&gt;&#xA;&#34;The soul in its early stages is like a rebellious horse. If not trained, it will never obey you.&#34;&lt;br&gt;&#xA;— Ibn Qayyim al-Jawziyya&#xA;&lt;/div&gt;&#xA;&lt;p&gt;I think the more I reflect on this series, the more I realize how little I actually knew about desire when I first started writing it all. It seemed like something simple at the start. A feeling really only. Something that could either be ignored or acted on. But now, after sitting with it, questioning , &lt;i&gt;if i really wanted this&lt;/i&gt;, falling to it sometimes and trying to rise again. The act of wanting, and that of wanting new things, which I mentioned in the last part, is what desire is—if not controlled with discipline, NOT pure motivation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:56459/projects/</link>
+      <link>http://localhost:1313/projects/</link>
       <pubDate>Fri, 18 Apr 2025 19:10:12 -0600</pubDate>
-      <guid>http://localhost:56459/projects/</guid>
+      <guid>http://localhost:1313/projects/</guid>
       <description>&lt;h2 id=&#34;game-theory-simulation---april-6th-2025&#34;&gt;Game Theory Simulation - April 6th 2025&lt;/h2&gt;&#xA;&lt;p&gt;After searching for a game theory simulation that wasn&amp;rsquo;t just educational but actually allowed competitive play, I couldn&amp;rsquo;t find one that fit. Most were limited to static demos or textbook-style visuals. So, I started building my own version of the classic Prisoner&amp;rsquo;s Dilemma as a side project. This is version 1, with support for both multiplayer over a local network and singleplayer versus a bot. I plan to improve it over time, but I&amp;rsquo;m publishing this first iteration on GitHub soon as a reference for anyone interested.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Desire and Its Nature – Pt. 2</title>
-      <link>http://localhost:56459/blog/desire-nature-pt2/</link>
+      <link>http://localhost:1313/blog/desire-nature-pt2/</link>
       <pubDate>Thu, 03 Apr 2025 12:00:00 +0000</pubDate>
-      <guid>http://localhost:56459/blog/desire-nature-pt2/</guid>
+      <guid>http://localhost:1313/blog/desire-nature-pt2/</guid>
       <description>&lt;div style=&#34;text-align: center; font-style: italic; margin: 30px 0;&#34;&gt;&#xA;&#34;Man is broad, too broad. I&#39;d have him narrower.&#34;&lt;br&gt;&#xA;— Fyodor Dostoevsky&#xA;&lt;/div&gt;&#xA;&lt;p&gt;This is a continuation of my earlier thoughts on desire. I still don’t have clear answers, but I am starting to see the layers more clearly. The surface is really obvious. Beneath it, things get harder and harder to define.&lt;/p&gt;&#xA;&lt;p&gt;What I’ve been noticing lately is how quickly desire changes. The moment one goes out, another takes its place. It is not about what is wanted, but about the state of wanting itself (&lt;i&gt; which I think is insane to think of&lt;/i&gt; ). That condition seems to persist, regardless of whether anything is actually missing at all.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Desire and it&#39;s Nature</title>
-      <link>http://localhost:56459/blog/desire-evil/</link>
+      <link>http://localhost:1313/blog/desire-evil/</link>
       <pubDate>Fri, 14 Mar 2025 12:00:00 +0000</pubDate>
-      <guid>http://localhost:56459/blog/desire-evil/</guid>
+      <guid>http://localhost:1313/blog/desire-evil/</guid>
       <description>&lt;div style=&#34;text-align: center; font-style: italic; margin: 30px 0;&#34;&gt;&#xA;&#34;The chains of habit are too weak to be felt until they are too strong to be broken.&#34;&lt;br&gt;&#xA;— Samuel Johnson&#xA;&lt;/div&gt;&#xA;&lt;p&gt;Recently, I have been thinking if my desires-good or bad-control me? Desire. It really is one of the greatest walls standing between a man and his own peace. Not all desires are evil, but the moment they become the master, the soul begins to rot. I have come to see more recently, there is something deceptive about it, the way it starts as a whisper—gentle, almost harmless. A itching for ease, for pleasure, for something just out of reach. It does not force itself upon you; it only asks. Wouldn&amp;rsquo;t it be easier? Wouldn&amp;rsquo;t it be nice? What harm is there in just this once? Or What if I just&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Desire Evil</title>
-      <link>http://localhost:56459/posts/desire-evil/</link>
-      <pubDate>Fri, 14 Mar 2025 00:50:53 -0500</pubDate>
-      <guid>http://localhost:56459/posts/desire-evil/</guid>
-      <description>&lt;div&gt;&#xA;    &lt;h3 class=&#34;toc&#34;&gt;Preview&lt;/h2&gt;&#xA;    &lt;hr&gt;&#xA;&#xA;    &lt;div style=&#34;margin-left: 1.5rem&#34;&gt;&#xA;        &lt;nav id=&#34;TableOfContents&#34;&gt;&lt;/nav&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>Manu</title>
-      <link>http://localhost:56459/manu/</link>
-      <pubDate>Mon, 30 Dec 2024 19:10:12 -0600</pubDate>
-      <guid>http://localhost:56459/manu/</guid>
-      <description>&lt;div&gt;&#xA;    &lt;h3 class=&#34;toc&#34;&gt;Preview&lt;/h2&gt;&#xA;    &lt;hr&gt;&#xA;&#xA;    &lt;div style=&#34;margin-left: 1.5rem&#34;&gt;&#xA;        &lt;nav id=&#34;TableOfContents&#34;&gt;&lt;/nav&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
       <title>My 2025 Checklist</title>
-      <link>http://localhost:56459/blog/2025-checklist/</link>
+      <link>http://localhost:1313/blog/2025-checklist/</link>
       <pubDate>Mon, 30 Dec 2024 12:00:00 +0000</pubDate>
-      <guid>http://localhost:56459/blog/2025-checklist/</guid>
+      <guid>http://localhost:1313/blog/2025-checklist/</guid>
       <description>&lt;p&gt;This is the list I have laid out for myself, though I expect new ideas will arise as January unfolds. It serves as a rough outline, a gathering of thoughts and aspirations for the year ahead. My hope is that, by this time next year, these goals will stand fulfilled, each box checked with purpose.&lt;/p&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Be conversational in Turkish&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Build some Swift apps&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Land new career opportunities&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Read 110 Books&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Bring new branches into The SISU Foundation&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Revise the Quran&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Get into cooking&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Bring out the prototype of Journa Media&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Master Web 2.0&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Travel to Liechtenstein&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Try to get 3.7-4.0 GPA this year&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Do a Marathon run&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Finish all of Fyodor Dostoevsky&#39;s work&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;Build more projects (at least 20)&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;checkbox&#34;&gt;&#xA;  &lt;div class=&#34;box&#34;&gt;&lt;/div&gt;&#xA;  &lt;div&gt;More connections - find them if you must&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&lt;i&gt; Inshallah &lt;/i&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Random Thought On The Brothers Karamazov</title>
-      <link>http://localhost:56459/blog/whynow/</link>
+      <link>http://localhost:1313/blog/whynow/</link>
       <pubDate>Mon, 30 Dec 2024 00:10:57 -0600</pubDate>
-      <guid>http://localhost:56459/blog/whynow/</guid>
+      <guid>http://localhost:1313/blog/whynow/</guid>
       <description>&lt;div&gt;&#xA;    &lt;h3 class=&#34;toc&#34;&gt;Preview&lt;/h2&gt;&#xA;    &lt;hr&gt;&#xA;&#xA;    &lt;div style=&#34;margin-left: 1.5rem&#34;&gt;&#xA;        &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ul&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#intro--my-current-thoughts-on-book-1&#34;&gt;Intro : My current thoughts on Book 1&lt;/a&gt;&lt;/li&gt;&#xA;  &lt;/ul&gt;&#xA;&lt;/nav&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;intro--my-current-thoughts-on-book-1&#34;&gt;Intro : My current thoughts on Book 1&lt;/h2&gt;&#xA;&lt;p&gt;I’m currently reading the book, and I must say, it begins at a rather slow pace—though this is, of course, typical of Fyodor’s style. Books One was excellent, revealing a deeply dysfunctional family, which I believe is entirely the result of Fyodor Pavlovich’s character.&lt;/p&gt;</description>
     </item>
     <item>
       <title>2024 Reflection</title>
-      <link>http://localhost:56459/blog/reflection/</link>
+      <link>http://localhost:1313/blog/reflection/</link>
       <pubDate>Sat, 28 Dec 2024 11:43:53 -0600</pubDate>
-      <guid>http://localhost:56459/blog/reflection/</guid>
+      <guid>http://localhost:1313/blog/reflection/</guid>
       <description>&lt;p&gt;2024 . What a year it was. The start of the year was epic, I had so much motivation to go do it all but as the year went by that motivation went away slowly. Which is why the quote&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Thinking is easy, acting is difficult, and to put one’s thoughts into action is the most difficult thing in the world.&amp;rdquo; &amp;ndash; Johann Wolfgang von Goethe&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Really hits the head now, looking back throughout the year. I found myself casually flying through specific months, and that specific motivation I once had in January seemed more of a ghost of my thoughts. It really is easy to THINK, but to DO—this is truly what isn’t easy. But I must give myself credit; this year, I have taken lessons and wrote them down in my core memory. Also what is a year without lesson ay?&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:56459/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 25 Dec 2024 20:58:06 -0600</pubDate>
-      <guid>http://localhost:56459/about/</guid>
-      <description>&lt;h2 id=&#34;abdisalam-sharif-ali&#34;&gt;Abdisalam Sharif Ali&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:56459/images/cam.png&#34; alt=&#34;abdi&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Well&amp;hellip; Welcome!&#xA;I&amp;rsquo;m a lover of books-classical ones mostly-a runner at heart, and someone who&amp;rsquo;s never shy about speaking my mind. If there&amp;rsquo;s one thing you should know about me, it&amp;rsquo;s that I believe in standing up for what I think is right-and doing something about it.&lt;/p&gt;&#xA;&lt;p&gt;I am in love with trying to bring education everywhere (pretty crazy that isn&amp;rsquo;t the case). I&amp;rsquo;m also a huge fan of the journalism industry and believe that traditional journalism is dying at the expense of money and greed (but I&amp;rsquo;ll probably go on and on about this in a blog post later).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;abdisalam-sharif-ali&#34;&gt;Abdisalam Sharif Ali&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/cam.png&#34; alt=&#34;abdi&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Well&amp;hellip; Welcome!&#xA;I&amp;rsquo;m a lover of books-classical ones mostly-a runner at heart, and someone who&amp;rsquo;s never shy about speaking my mind. If there&amp;rsquo;s one thing you should know about me, it&amp;rsquo;s that I believe in standing up for what I think is right-and doing something about it.&lt;/p&gt;&#xA;&lt;p&gt;I am in love with trying to bring education everywhere (pretty crazy that isn&amp;rsquo;t the case). I&amp;rsquo;m also a huge fan of the journalism industry and believe that traditional journalism is dying at the expense of money and greed (but I&amp;rsquo;ll probably go on and on about this in a blog post later).&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:56459/blog/firstblog-post/</link>
+      <link>http://localhost:1313/blog/firstblog-post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56459/blog/firstblog-post/</guid>
+      <guid>http://localhost:1313/blog/firstblog-post/</guid>
       <description></description>
     </item>
     <item>
       <title>My Books</title>
-      <link>http://localhost:56459/books/</link>
+      <link>http://localhost:1313/books/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56459/books/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Note: Books with gold/blue coloring have detailed blog posts. Books marked with ** have quick thoughts. I am still working on this page :)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;philosophy&#34;&gt;Philosophy&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:56459/blog/whynow&#34; class=&#34;has-blog-post&#34; style=&#34;color: #ffb255 !important; text-decoration: underline !important;&#34;&gt;The Brothers Karamazov&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Meditations&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The Metamorphosis&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The Judgement (Das Uretil, 1913)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;non-fiction&#34;&gt;Non-Fiction&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Atomic Habits &lt;span class=&#34;quick-thought-indicator&#34; style=&#34;color: #ffb255 !important; cursor: pointer; margin-left: 5px;&#34; onclick=&#34;document.getElementById(&#39;atomic-habits-thoughts&#39;).style.display = document.getElementById(&#39;atomic-habits-thoughts&#39;).style.display === &#39;none&#39; ? &#39;block&#39; : &#39;none&#39;&#34;&gt;**&lt;/span&gt;&lt;/p&gt;&#xA;&lt;div id=&#34;atomic-habits-thoughts&#34; style=&#34;display: none; margin-left: 20px; padding-left: 10px; border-left: 2px solid #ffb255; font-size: 0.9em;&#34;&gt;&#xA;  &lt;p&gt;The 1% improvement principle is transformative over time. Identity-based habits are more sustainable than outcome-based ones. The four laws of behavior change provide a practical framework. Small habits compound into remarkable results.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/books/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Note: Books with gold/blue coloring have detailed blog posts. Books marked with ** have quick thoughts. I am still working on this page :)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;philosophy&#34;&gt;Philosophy&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/blog/whynow&#34; class=&#34;has-blog-post&#34; style=&#34;color: #ffb255 !important; text-decoration: underline !important;&#34;&gt;The Brothers Karamazov&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Meditations&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The Metamorphosis&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The Judgement (Das Uretil, 1913)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;non-fiction&#34;&gt;Non-Fiction&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Atomic Habits &lt;span class=&#34;quick-thought-indicator&#34; style=&#34;color: #ffb255 !important; cursor: pointer; margin-left: 5px;&#34; onclick=&#34;document.getElementById(&#39;atomic-habits-thoughts&#39;).style.display = document.getElementById(&#39;atomic-habits-thoughts&#39;).style.display === &#39;none&#39; ? &#39;block&#39; : &#39;none&#39;&#34;&gt;**&lt;/span&gt;&lt;/p&gt;&#xA;&lt;div id=&#34;atomic-habits-thoughts&#34; style=&#34;display: none; margin-left: 20px; padding-left: 10px; border-left: 2px solid #ffb255; font-size: 0.9em;&#34;&gt;&#xA;  &lt;p&gt;The 1% improvement principle is transformative over time. Identity-based habits are more sustainable than outcome-based ones. The four laws of behavior change provide a practical framework. Small habits compound into remarkable results.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Other</title>
-      <link>http://localhost:56459/other/</link>
+      <link>http://localhost:1313/other/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56459/other/</guid>
+      <guid>http://localhost:1313/other/</guid>
       <description></description>
     </item>
   </channel>
