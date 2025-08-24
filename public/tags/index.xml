@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Sir Abdisalam | The Website</title>
-    <link>http://localhost:56459/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Jun 2025 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:56459/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Desire</title>
-      <link>http://localhost:56459/tags/desire/</link>
+      <link>http://localhost:1313/tags/desire/</link>
       <pubDate>Tue, 03 Jun 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:56459/tags/desire/</guid>
+      <guid>http://localhost:1313/tags/desire/</guid>
       <description></description>
     </item>
     <item>
       <title>Philosophy</title>
-      <link>http://localhost:56459/tags/philosophy/</link>
+      <link>http://localhost:1313/tags/philosophy/</link>
       <pubDate>Tue, 03 Jun 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:56459/tags/philosophy/</guid>
+      <guid>http://localhost:1313/tags/philosophy/</guid>
       <description></description>
     </item>
     <item>
       <title>Self-Reflection</title>
-      <link>http://localhost:56459/tags/self-reflection/</link>
+      <link>http://localhost:1313/tags/self-reflection/</link>
       <pubDate>Thu, 03 Apr 2025 12:00:00 +0000</pubDate>
-      <guid>http://localhost:56459/tags/self-reflection/</guid>
+      <guid>http://localhost:1313/tags/self-reflection/</guid>
       <description></description>
     </item>
     <item>
       <title>Evil</title>
-      <link>http://localhost:56459/tags/evil/</link>
+      <link>http://localhost:1313/tags/evil/</link>
       <pubDate>Fri, 14 Mar 2025 12:00:00 +0000</pubDate>
-      <guid>http://localhost:56459/tags/evil/</guid>
+      <guid>http://localhost:1313/tags/evil/</guid>
       <description></description>
     </item>
     <item>
       <title>Personal</title>
-      <link>http://localhost:56459/tags/personal/</link>
+      <link>http://localhost:1313/tags/personal/</link>
       <pubDate>Mon, 30 Dec 2024 12:00:00 +0000</pubDate>
-      <guid>http://localhost:56459/tags/personal/</guid>
+      <guid>http://localhost:1313/tags/personal/</guid>
       <description></description>
     </item>
     <item>
       <title>Free-Writing</title>
-      <link>http://localhost:56459/tags/free-writing/</link>
+      <link>http://localhost:1313/tags/free-writing/</link>
       <pubDate>Mon, 30 Dec 2024 00:10:57 -0600</pubDate>
-      <guid>http://localhost:56459/tags/free-writing/</guid>
+      <guid>http://localhost:1313/tags/free-writing/</guid>
       <description></description>
     </item>
     <item>
       <title>Sir Abdisalam</title>
-      <link>http://localhost:56459/tags/sir-abdisalam/</link>
+      <link>http://localhost:1313/tags/sir-abdisalam/</link>
       <pubDate>Sat, 28 Dec 2024 11:43:53 -0600</pubDate>
-      <guid>http://localhost:56459/tags/sir-abdisalam/</guid>
+      <guid>http://localhost:1313/tags/sir-abdisalam/</guid>
       <description></description>
     </item>
     <item>
       <title>Books</title>
-      <link>http://localhost:56459/tags/books/</link>
+      <link>http://localhost:1313/tags/books/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56459/tags/books/</guid>
+      <guid>http://localhost:1313/tags/books/</guid>
       <description></description>
     </item>
   </channel>

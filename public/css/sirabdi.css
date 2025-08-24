@@ -1050,15 +1050,6 @@ body.light-mode .tag-link.active {
 .post-preview {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(146, 133, 133, 0.2);
-}
-
-body.light-mode .post-preview {
-  border-bottom-color: rgba(10, 31, 68, 0.2);
-}
-
-.post-preview:last-child {
-  border-bottom: none;
 }
 
 .post-meta {
