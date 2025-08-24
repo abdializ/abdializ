@@ -1,0 +1,75 @@
+{{ define "main" }}
+<div class="container" role="main">
+    <div class="blog-header">
+        <h1 class="blog-title">Blog</h1>
+        <p class="blog-subtitle">Thoughts, reflections, and ideas</p>
+    </div>
+
+    <div class="blog-stats">
+        <p class="post-count">{{ len .RegularPages }} {{ if eq (len .RegularPages) 1 }}post{{ else }}posts{{ end }}</p>
+    </div>
+
+    <!-- Tag Filter -->
+    <div class="tag-filter">
+        <span class="filter-label">Filter by tags:</span>
+        {{ $allTags := slice }}
+        {{ range .RegularPages }}
+        {{ range .Params.tags }}
+        {{ $allTags = $allTags | append . }}
+        {{ end }}
+        {{ end }}
+        {{ $uniqueTags := partial "normalize-tags.html" $allTags }}
+        <a href="{{ .Permalink }}" class="tag-link {{ if not .IsHome }}active{{ end }}">All</a>
+        {{ range $uniqueTags }}
+        <a href="/tags/{{ urlize (lower .) }}/" class="tag-link">{{ . }}</a>
+        {{ end }}
+    </div>
+
+    <div class="posts-list">
+        {{ range .RegularPages.ByDate.Reverse }}
+        <article class="post-preview">
+            <div class="post-meta">
+                {{ if .Date }}
+                <time class="post-date" datetime="{{ .Date.Format " 2006-01-02" }}">
+                    {{ .Date.Format "Jan 2, 2006" }}
+                </time>
+                {{ end }}
+
+                {{ $wordCount := len (split .Content " ") }}
+                {{ if gt $wordCount 20 }}
+                {{ $readingTime := div $wordCount 150 }}
+                {{ if lt $readingTime 1 }}
+                {{ $readingTime = 1 }}
+                {{ end }}
+                <span class="reading-time">{{ $readingTime }} min read</span>
+                {{ end }}
+            </div>
+
+            <h2 class="post-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+
+            {{ if .Params.description }}
+            <p class="post-description">{{ .Params.description }}</p>
+            {{ else }}
+            <p class="post-description">{{ .Content | plainify | truncate 150 }}</p>
+            {{ end }}
+
+            {{ if .Params.tags }}
+            <div class="post-tags">
+                {{ range .Params.tags }}
+                <a href="/tags/{{ urlize (lower .) }}/" class="post-tag">{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </article>
+        {{ end }}
+    </div>
+
+    {{ if eq (len .RegularPages) 0 }}
+    <div class="no-posts">
+        <p>No posts found.</p>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

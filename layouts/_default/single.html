@@ -1,39 +1,80 @@
 {{ define "main" }}
-  <div class="container" role="main">
-    <article class="article">
+<div class="container" role="main">
+  <!-- Back to Blog Link - Only show for blog posts -->
+  {{ if eq .Section "blog" }}
+  <nav class="post-nav">
+    <a href="/blog/" class="back-to-blog">← Back to Blog</a>
+  </nav>
+  {{ end }}
 
-      <!-- Title -->
-        {{ $title := .Title }}
-        {{ with index .Params.tags 0 }}
-            <h1><a href="{{ (urlize (printf "tags/%s/" .)) | absLangURL }}">{{ $title }}</a></h1>
-        {{ end }}
-        {{ if .Date }}
-          {{ $wordCount := len (split .Content " ") }}
-          {{ $readingTime := div $wordCount 150 }}
-          <p class="text-center"><i>
-            {{ .Date.Format "January, 02 2006" }} &bull; 
-            {{ $readingTime }} min read &bull; 
-            {{ $wordCount }} words
-            {{ if ne .Date.Unix .Lastmod.Unix }}
-              &bull; Updated {{ .Lastmod.Format "January, 06 2006" }}
-            {{ end }}
-          </i></p>
-        {{ end }}
-      <h6 class="text-center">{{ .Params.description }}</h6>
-      <br>
+  <article class="article">
+    <!-- Title -->
+    <header class="post-header">
+      <h1 class="post-title">{{ .Title }}</h1>
 
-
-      <!-- Content -->
-      {{ .Content }}
-
-      <br>
-      <!-- Bottom Tags -->
-      <div class="blog-tags">
-        Tags: 
-        {{ range .Params.tags }}
-        <a href="{{ (urlize (printf "tags/%s/" .)) | absLangURL }}">{{ . }}</a>&nbsp;
+      {{ if .Date }}
+      {{ $wordCount := len (split .Content " ") }}
+      {{ $readingTime := div $wordCount 150 }}
+      {{ if lt $readingTime 1 }}
+      {{ $readingTime = 1 }}
+      {{ end }}
+      <div class="post-meta">
+        <time class="post-date" datetime="{{ .Date.Format " 2006-01-02" }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+        <span class="meta-separator">•</span>
+        <span class="reading-time">{{ $readingTime }} min read</span>
+        <span class="meta-separator">•</span>
+        <span class="word-count">{{ $wordCount }} words</span>
+        {{ if ne .Date.Unix .Lastmod.Unix }}
+        <span class="meta-separator">•</span>
+        <span class="updated-date">Updated {{ .Lastmod.Format "Jan 2, 2006" }}</span>
         {{ end }}
       </div>
-    </article>
-  </div>
+      {{ end }}
+
+      {{ if .Params.description }}
+      <p class="post-description">{{ .Params.description }}</p>
+      {{ end }}
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+    <!-- Post Footer -->
+    <footer class="post-footer">
+      {{ if .Params.tags }}
+      <div class="post-tags">
+        <span class="tags-label">Tagged with:</span>
+        {{ range .Params.tags }}
+        <a href="/tags/{{ urlize (lower .) }}/" class="post-tag">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <!-- Post Navigation -->
+      <nav class="post-navigation">
+        {{ with .NextInSection }}
+        <div class="nav-previous">
+          <a href="{{ .RelPermalink }}" class="nav-link">
+            <span class="nav-label">← Previous</span>
+            <span class="nav-title">{{ .Title }}</span>
+          </a>
+        </div>
+        {{ end }}
+
+        {{ with .PrevInSection }}
+        <div class="nav-next">
+          <a href="{{ .RelPermalink }}" class="nav-link">
+            <span class="nav-label">Next →</span>
+            <span class="nav-title">{{ .Title }}</span>
+          </a>
+        </div>
+        {{ end }}
+      </nav>
+    </footer>
+  </article>
+</div>
 {{ end }}
