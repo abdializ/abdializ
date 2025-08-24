@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5X4TTXE5KW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5X4TTXE5KW');
+    </script>
+
     {{- partial "head.html" . -}}
-    <body>
-        <!-- Mode Button -->
-        <button id="theme-toggle" class="mode-button">Mode</button>
+</head>
 
-        <!-- Conditional Header -->
-        {{ if not .IsHome }}
-            {{- partial "header.html" . -}}
-        {{ end }}
-        
-        <!-- Main Content -->
-        <div id="content">
-            {{- block "main" . }}{{- end }}
-        </div>
+<body>
+    <!-- Mode Button -->
+    <button id="theme-toggle" class="mode-button">Mode</button>
 
-        <!-- Scripts -->
-        <script src="/js/sirabdi.js"></script>
-    </body>
+    <!-- Conditional Header -->
+    {{ if not .IsHome }}
+    {{- partial "header.html" . -}}
+    {{ end }}
+
+    <!-- Main Content -->
+    <div id="content">
+        {{- block "main" . }}{{- end }}
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/sirabdi.js"></script>
+</body>
+
 </html>
