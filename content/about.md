@@ -9,7 +9,6 @@ tags = ['Sir Abdisalam']
 
 ![abdi](/images/cam.png)
 
----
 
 Well... Welcome! 
 I'm a lover of books-classical ones mostly-a runner at heart, and someone who's never shy about speaking my mind. If there's one thing you should know about me, it's that I believe in standing up for what I think is right-and doing something about it.

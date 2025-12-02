@@ -165,7 +165,7 @@ body.light-mode .tag-title a {
 /* Light Mode */
 body.light-mode {
   background-color: #fff1e1;
-  color: #0a1f44; /* Dark blue color for text */
+  color: #002266; /* Darker/bolder blue text (was #0a1f44) */
 }
 
 /* Update headings in light mode */
@@ -175,7 +175,7 @@ body.light-mode h3,
 body.light-mode h4,
 body.light-mode h5,
 body.light-mode h6 {
-  color: #0a1f44;
+  color: #002266;
 }
 
 /* Update other light mode text colors */
@@ -187,7 +187,7 @@ body.light-mode .container h6,
 body.light-mode .toc,
 body.light-mode .site-header,
 body.light-mode .navbar {
-  color: #0a1f44 !important;
+  color: #002266 !important;
 }
 
 /* Default link color for both light and dark modes */
@@ -198,7 +198,7 @@ a {
 
 /* Light mode link color - keeping gold */
 body.light-mode a {
-  color: #ffb255;
+  color: #0044cc; /* Bolder blue links (was #ffb255 override) */
 }
 
 /* Book section specific styles */
@@ -207,7 +207,7 @@ body.light-mode a {
 }
 
 body.light-mode .book-entry a {
-  color: #0a1f44; /* Dark blue for book links in light mode */
+  color: #0044cc; /* Bolder blue for book links in light mode */
 }
 
 .book-link {
@@ -215,16 +215,16 @@ body.light-mode .book-entry a {
 }
 
 body.light-mode .book-link {
-  color: #0a1f44; /* Dark blue for book links in light mode */
+  color: #0044cc; /* Bolder blue for book links in light mode */
 }
 
 /* Box and checkbox styles */
 body.light-mode .box {
-  border: 1px solid #0a1f44;
+  border: 1px solid #002266;
 }
 
 body.light-mode .checkbox {
-  color: #0a1f44;
+  color: #002266;
 }
 
 /* Reset some basic elements for a clean slate */
@@ -242,7 +242,7 @@ body.light-mode .checkbox {
 :root.light-mode {
   --background-color: #fff1e1;
   --text-color: #000000;
-  --link-color: #1a73e8;
+  --link-color: #0044cc; /* Thicker/bolder blue (was #1a73e8) */
   --border-color: #cccccc;
   --button-color: var(--background-color);
 }
@@ -363,7 +363,7 @@ h1 {
 /* Light mode override for theme toggle */
 body.light-mode #theme-toggle {
   background-color: #fff1e1;
-  color: #40280b;
+  color: #002266;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -390,7 +390,7 @@ article h2 {
 
 body.light-mode article h1,
 body.light-mode article h2 {
-  color: #0a1f44;
+  color: #002266;
 }
 
 /* Article links */
@@ -400,7 +400,7 @@ article a {
 }
 
 body.light-mode article a {
-  color: #0a1f44;
+  color: #0044cc;
 }
 
 article a:hover {
@@ -727,8 +727,8 @@ body.light-mode .audio-caption {
 }
 
 body.light-mode .custom-audio-player {
-  background-color: rgba(10, 31, 68, 0.05);
-  border-color: rgba(10, 31, 68, 0.2);
+  background-color: rgba(0, 34, 102, 0.05);
+  border-color: rgba(0, 68, 204, 0.2);
 }
 
 .play-pause-btn {
@@ -744,55 +744,123 @@ body.light-mode .custom-audio-player {
 }
 
 body.light-mode .play-pause-btn {
-  color: #1a73e8;
+  color: #0044cc;
 }
 
 .play-pause-btn:hover {
   transform: scale(1.1);
 }
 
-.time-display {
-  font-family: "Source Code Pro", monospace;
-  font-size: 0.8rem;
-  color: #928585;
-  min-width: 35px;
-}
-
-body.light-mode .time-display {
-  color: #0a1f44;
-}
-
 .progress-container {
   flex-grow: 1;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+  height: 100%; /* Match the height of the player wrapper */
+  position: absolute; /* Absolute positioning to fill the pill */
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  z-index: 0; /* Behind the controls */
 }
 
 .progress-bar {
   width: 100%;
-  height: 6px;
-  background-color: rgba(146, 133, 133, 0.3);
-  border-radius: 3px;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50px;
   overflow: hidden;
   position: relative;
 }
 
 body.light-mode .progress-bar {
-  background-color: rgba(10, 31, 68, 0.2);
+  background-color: transparent;
 }
 
 .progress-fill {
   height: 100%;
   width: 0%;
-  background-color: #ffb255;
-  border-radius: 3px;
+  background-color: rgba(255, 178, 85, 0.3); /* Solid gold tint, increased opacity */
+  border-radius: 0; /* Fill the container */
   transition: width 0.1s linear;
+  background-image: none; /* Remove liquid pattern */
+  animation: none; /* Remove liquid animation */
 }
 
 body.light-mode .progress-fill {
-  background-color: #1a73e8;
+  background-color: rgba(0, 68, 204, 0.3); /* Solid blue tint, increased opacity */
+  background-image: none;
+}
+
+/* Ensure controls are on top */
+.play-pause-btn,
+.time-display {
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth transition */
+}
+
+.time-display.duration {
+  /* Initially centered */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.time-display.current-time {
+  /* Initially hidden */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8); /* Slightly smaller start */
+  opacity: 0;
+  white-space: nowrap; /* Prevent wrapping */
+  pointer-events: none;
+}
+
+/* Playing state: Duration moves right, Current Time fades in at center */
+.custom-audio-player.playing .time-display.duration {
+  left: auto; /* Release left constraint */
+  right: 1.5rem; /* Anchor to right */
+  transform: translateX(0); /* Reset transform */
+}
+
+.custom-audio-player.playing .time-display.current-time {
+  opacity: 1;
+  transform: translateX(-50%) scale(1); /* Full size, centered */
+  pointer-events: auto;
+}
+
+/* Make the wrapper relative for absolute positioning of progress bar */
+.custom-audio-player {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out controls */
+  gap: 1rem;
+  padding: 0.8rem 1.5rem; /* Add more padding */
+  background-color: rgba(146, 133, 133, 0.08);
+  border-radius: 50px; /* Pill shape */
+  border: 1px solid rgba(146, 133, 133, 0.2);
+  transition: all 0.3s ease;
+  overflow: hidden; /* Contain the progress bar */
+  height: 60px; /* Fixed height to ensure consistency */
+  opacity: 0.7; /* Dim by default */
+}
+
+.custom-audio-player:hover,
+.custom-audio-player.playing {
+  opacity: 1; /* Full opacity on hover or when playing */
+  background-color: rgba(146, 133, 133, 0.15); /* Slightly darker background on hover */
+  border-color: rgba(146, 133, 133, 0.4);
+  transform: scale(1.02); /* Subtle pop effect */
+}
+
+body.light-mode .custom-audio-player:hover,
+body.light-mode .custom-audio-player.playing {
+  background-color: rgba(0, 34, 102, 0.1);
+  border-color: rgba(0, 68, 204, 0.4);
 }
 
 
@@ -972,7 +1040,7 @@ body:not(.light-mode) #theme-toggle {
 }
 
 body.light-mode .quick-thought-toggle {
-  color: #1a73e8;
+  color: #0044cc;
 }
 
 .quick-thought-content {
@@ -985,8 +1053,8 @@ body.light-mode .quick-thought-toggle {
 }
 
 body.light-mode .quick-thought-content {
-  border-left-color: #1a73e8;
-  color: #0a1f44;
+  border-left-color: #0044cc;
+  color: #002266;
 }
 
 .quick-thought-content.visible {
@@ -1055,7 +1123,7 @@ body.light-mode .quick-thought-content {
 }
 
 body.light-mode .blog-header {
-  border-bottom-color: rgba(10, 31, 68, 0.5);
+  border-bottom-color: rgba(0, 34, 102, 0.5);
 }
 
 .blog-title {
@@ -1065,7 +1133,7 @@ body.light-mode .blog-header {
 }
 
 body.light-mode .blog-title {
-  color: #0a1f44;
+  color: #002266;
 }
 
 .blog-subtitle {
@@ -1076,7 +1144,7 @@ body.light-mode .blog-title {
 }
 
 body.light-mode .blog-subtitle {
-  color: #0a1f44;
+  color: #002266;
 }
 
 .blog-stats {
@@ -1091,7 +1159,7 @@ body.light-mode .blog-subtitle {
 }
 
 body.light-mode .post-count {
-  color: #0a1f44;
+  color: #002266;
 }
 
 /* Tag Filter */
@@ -1104,7 +1172,7 @@ body.light-mode .post-count {
 }
 
 body.light-mode .tag-filter {
-  background-color: rgba(10, 31, 68, 0.05);
+  background-color: rgba(0, 34, 102, 0.05);
 }
 
 .filter-label {
@@ -1115,7 +1183,7 @@ body.light-mode .tag-filter {
 }
 
 body.light-mode .filter-label {
-  color: #0a1f44;
+  color: #002266;
 }
 
 .tag-link {
@@ -1138,13 +1206,13 @@ body.light-mode .filter-label {
 }
 
 body.light-mode .tag-link {
-  border-color: #1a73e8;
-  color: #1a73e8;
+  border-color: #0044cc;
+  color: #0044cc;
 }
 
 body.light-mode .tag-link:hover,
 body.light-mode .tag-link.active {
-  background-color: #1a73e8;
+  background-color: #0044cc;
   color: #fff1e1;
 }
 
@@ -1161,7 +1229,7 @@ body.light-mode .tag-link.active {
 }
 
 body.light-mode .post-meta {
-  color: #0a1f44;
+  color: #002266;
 }
 
 .post-date {
@@ -1193,7 +1261,7 @@ body.light-mode .post-meta {
 }
 
 body.light-mode .post-title a {
-  color: #0a1f44;
+  color: #002266;
 }
 
 .post-description {
@@ -1204,7 +1272,7 @@ body.light-mode .post-title a {
 }
 
 body.light-mode .post-description {
-  color: #0a1f44;
+  color: #002266;
 }
 
 .post-tags {
@@ -1222,7 +1290,7 @@ body.light-mode .post-description {
 }
 
 body.light-mode .tags-label {
-  color: #0a1f44;
+  color: #002266;
 }
 
 .post-tag {
@@ -1243,13 +1311,13 @@ body.light-mode .tags-label {
 }
 
 body.light-mode .post-tag {
-  background-color: rgba(26, 115, 232, 0.1);
-  border-color: #1a73e8;
-  color: #1a73e8;
+  background-color: rgba(0, 68, 204, 0.1);
+  border-color: #0044cc;
+  color: #0044cc;
 }
 
 body.light-mode .post-tag:hover {
-  background-color: #1a73e8;
+  background-color: #0044cc;
   color: #fff1e1;
 }
 
@@ -1270,11 +1338,11 @@ body.light-mode .post-tag:hover {
 }
 
 body.light-mode .back-to-blog {
-  color: #0a1f44;
+  color: #002266;
 }
 
 body.light-mode .back-to-blog:hover {
-  color: #1a73e8;
+  color: #0044cc;
 }
 
 .post-header {
@@ -1285,7 +1353,7 @@ body.light-mode .back-to-blog:hover {
 }
 
 body.light-mode .post-header {
-  border-bottom-color: rgba(26, 115, 232, 0.4);
+  border-bottom-color: rgba(0, 68, 204, 0.4);
 }
 
 .post-title {
@@ -1296,7 +1364,7 @@ body.light-mode .post-header {
 }
 
 body.light-mode .post-title {
-  color: #0a1f44;
+  color: #002266;
 }
 
 .post-content {
@@ -1309,7 +1377,7 @@ body.light-mode .post-title {
 }
 
 body.light-mode .post-footer {
-  border-top-color: rgba(26, 115, 232, 0.3);
+  border-top-color: rgba(0, 68, 204, 0.3);
 }
 
 /* Post Navigation */
@@ -1344,13 +1412,13 @@ body.light-mode .post-footer {
 }
 
 body.light-mode .nav-link {
-  color: #0a1f44;
-  border-color: rgba(10, 31, 68, 0.4);
+  color: #002266;
+  border-color: rgba(0, 34, 102, 0.4);
 }
 
 body.light-mode .nav-link:hover {
-  border-color: #1a73e8;
-  background-color: rgba(26, 115, 232, 0.05);
+  border-color: #0044cc;
+  background-color: rgba(0, 68, 204, 0.05);
 }
 
 .nav-label {
@@ -1375,7 +1443,7 @@ body.light-mode .nav-link:hover {
 }
 
 body.light-mode .no-posts {
-  color: #0a1f44;
+  color: #002266;
 }
 
 /* Responsive Design for Blog */
@@ -1405,4 +1473,33 @@ body.light-mode .no-posts {
     display: block;
     margin-bottom: 0.5rem;
   }
+}
+
+/* Gallery Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 16 / 9;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0; /* Override default image border-radius */
 }

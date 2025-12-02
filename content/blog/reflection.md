@@ -6,6 +6,8 @@ tags = ["Sir Abdisalam"]
 draft = false
 +++
 
+{{< audio "/audio/reflection copy.m4a" "Listen to my thoughts" >}}
+
 2024 . What a year it was. The start of the year was epic, I had so much motivation to go do it all but as the year went by that motivation went away slowly. Which is why the quote 
 
 > "Thinking is easy, acting is difficult, and to put one’s thoughts into action is the most difficult thing in the world." -- Johann Wolfgang von Goethe

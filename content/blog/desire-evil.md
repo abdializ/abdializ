@@ -6,6 +6,8 @@ tags = ["Desire", "Evil", "Philosophy"]
 description = "This is my honest thought on desire, my journey with it, and how I view it."
 +++
 
+{{< audio "/audio/desire-evil.m4a" "You can listen to my thoughts!" >}}
+
 <div style="text-align: center; font-style: italic; margin: 30px 0;">
 "The chains of habit are too weak to be felt until they are too strong to be broken."<br>
 — Samuel Johnson
