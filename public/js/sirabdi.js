@@ -129,3 +129,75 @@ function toggleThought(element) {
     }
 }
 
+// Custom Audio Player Logic
+document.addEventListener('DOMContentLoaded', function() {
+    const audioPlayers = document.querySelectorAll('.custom-audio-player');
+
+    audioPlayers.forEach(player => {
+        const audio = player.querySelector('audio');
+        const playBtn = player.querySelector('.play-pause-btn');
+        const playIcon = player.querySelector('.play-icon');
+        const pauseIcon = player.querySelector('.pause-icon');
+        const progressBar = player.querySelector('.progress-bar');
+        const progressFill = player.querySelector('.progress-fill');
+        const currentTimeDisplay = player.querySelector('.current-time');
+        const durationDisplay = player.querySelector('.duration');
+        const progressContainer = player.querySelector('.progress-container');
+
+        // Format time in MM:SS
+        function formatTime(seconds) {
+            if (isNaN(seconds)) return "0:00";
+            const min = Math.floor(seconds / 60);
+            const sec = Math.floor(seconds % 60);
+            return `${min}:${sec < 10 ? '0' : ''}${sec}`;
+        }
+
+        // Toggle Play/Pause
+        playBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'block';
+            } else {
+                audio.pause();
+                playIcon.style.display = 'block';
+                pauseIcon.style.display = 'none';
+            }
+        });
+
+        // Update Progress and Time
+        audio.addEventListener('timeupdate', () => {
+            const percent = (audio.currentTime / audio.duration) * 100;
+            progressFill.style.width = `${percent}%`;
+            currentTimeDisplay.textContent = formatTime(audio.currentTime);
+        });
+
+        // Set Duration
+        audio.addEventListener('loadedmetadata', () => {
+            durationDisplay.textContent = formatTime(audio.duration);
+        });
+        
+        // Also try to set duration if metadata is already loaded
+        if (audio.readyState >= 1) {
+           durationDisplay.textContent = formatTime(audio.duration);
+        }
+
+        // Seek
+        progressContainer.addEventListener('click', (e) => {
+            const width = progressContainer.clientWidth;
+            const clickX = e.offsetX;
+            const duration = audio.duration;
+            if (duration) {
+                audio.currentTime = (clickX / width) * duration;
+            }
+        });
+
+        // Reset on End
+        audio.addEventListener('ended', () => {
+            playIcon.style.display = 'block';
+            pauseIcon.style.display = 'none';
+            progressFill.style.width = '0%';
+            currentTimeDisplay.textContent = '0:00';
+        });
+    });
+});
