@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sir Abdisalam on Sir Abdisalam | The Website</title>
-    <link>https://www.abdisalam.blog/tags/sir-abdisalam/</link>
+    <link>http://localhost:1313/tags/sir-abdisalam/</link>
     <description>Recent content in Sir Abdisalam on Sir Abdisalam | The Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2024 11:43:53 -0600</lastBuildDate>
-    <atom:link href="https://www.abdisalam.blog/tags/sir-abdisalam/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/sir-abdisalam/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024 Reflection</title>
-      <link>https://www.abdisalam.blog/blog/reflection/</link>
+      <link>http://localhost:1313/blog/reflection/</link>
       <pubDate>Sat, 28 Dec 2024 11:43:53 -0600</pubDate>
-      <guid>https://www.abdisalam.blog/blog/reflection/</guid>
-      <description>&lt;p&gt;2024 . What a year it was. The start of the year was epic, I had so much motivation to go do it all but as the year went by that motivation went away slowly. Which is why the quote&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Thinking is easy, acting is difficult, and to put one’s thoughts into action is the most difficult thing in the world.&amp;rdquo; &amp;ndash; Johann Wolfgang von Goethe&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Really hits the head now, looking back throughout the year. I found myself casually flying through specific months, and that specific motivation I once had in January seemed more of a ghost of my thoughts. It really is easy to THINK, but to DO—this is truly what isn’t easy. But I must give myself credit; this year, I have taken lessons and wrote them down in my core memory. Also what is a year without lesson ay?&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/reflection/</guid>
+      <description>&lt;div class=&#34;audio-player-wrapper&#34;&gt;&#xA;    &lt;div class=&#34;audio-caption&#34;&gt;Listen to my thoughts&lt;/div&gt;&#xA;    &lt;div class=&#34;custom-audio-player&#34;&gt;&#xA;        &lt;audio preload=&#34;metadata&#34; class=&#34;audio-element&#34;&gt;&#xA;            &lt;source src=&#34;http://localhost:1313/audio/reflection%20copy.m4a&#34; type=&#34;audio/mp4&#34;&gt;&#xA;            &lt;source src=&#34;http://localhost:1313/audio/reflection%20copy.m4a&#34; type=&#34;audio/mpeg&#34;&gt;&#xA;            Your browser does not support the audio element.&#xA;        &lt;/audio&gt;&#xA;        &#xA;        &lt;div class=&#34;progress-container&#34;&gt;&#xA;            &lt;div class=&#34;progress-bar&#34;&gt;&#xA;                &lt;div class=&#34;progress-fill&#34;&gt;&lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;        &lt;button class=&#34;play-pause-btn&#34; aria-label=&#34;Play&#34;&gt;&#xA;            &lt;svg class=&#34;play-icon&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;24&#34; height=&#34;24&#34;&gt;&#xA;                &lt;path d=&#34;M8 5v14l11-7z&#34; fill=&#34;currentColor&#34;/&gt;&#xA;            &lt;/svg&gt;&#xA;            &lt;svg class=&#34;pause-icon&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;24&#34; height=&#34;24&#34; style=&#34;display: none;&#34;&gt;&#xA;                &lt;path d=&#34;M6 19h4V5H6v14zm8-14v14h4V5h-4z&#34; fill=&#34;currentColor&#34;/&gt;&#xA;            &lt;/svg&gt;&#xA;        &lt;/button&gt;&#xA;        &#xA;        &lt;div class=&#34;time-display current-time&#34;&gt;0:00&lt;/div&gt;&#xA;        &lt;div class=&#34;time-display duration&#34;&gt;--:--&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;2024 . What a year it was. The start of the year was epic, I had so much motivation to go do it all but as the year went by that motivation went away slowly. Which is why the quote&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Thinking is easy, acting is difficult, and to put one’s thoughts into action is the most difficult thing in the world.&amp;rdquo; &amp;ndash; Johann Wolfgang von Goethe&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>https://www.abdisalam.blog/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 25 Dec 2024 20:58:06 -0600</pubDate>
-      <guid>https://www.abdisalam.blog/about/</guid>
-      <description>&lt;h2 id=&#34;abdisalam-sharif-ali&#34;&gt;Abdisalam Sharif Ali&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.abdisalam.blog/images/cam.png&#34; alt=&#34;abdi&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Well&amp;hellip; Welcome!&#xA;I&amp;rsquo;m a lover of books-classical ones mostly-a runner at heart, and someone who&amp;rsquo;s never shy about speaking my mind. If there&amp;rsquo;s one thing you should know about me, it&amp;rsquo;s that I believe in standing up for what I think is right-and doing something about it.&lt;/p&gt;&#xA;&lt;p&gt;I am in love with trying to bring education everywhere (pretty crazy that isn&amp;rsquo;t the case). I&amp;rsquo;m also a huge fan of the journalism industry and believe that traditional journalism is dying at the expense of money and greed (but I&amp;rsquo;ll probably go on and on about this in a blog post later).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;abdisalam-sharif-ali&#34;&gt;Abdisalam Sharif Ali&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/cam.png&#34; alt=&#34;abdi&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well&amp;hellip; Welcome!&#xA;I&amp;rsquo;m a lover of books-classical ones mostly-a runner at heart, and someone who&amp;rsquo;s never shy about speaking my mind. If there&amp;rsquo;s one thing you should know about me, it&amp;rsquo;s that I believe in standing up for what I think is right-and doing something about it.&lt;/p&gt;&#xA;&lt;p&gt;I am in love with trying to bring education everywhere (pretty crazy that isn&amp;rsquo;t the case). I&amp;rsquo;m also a huge fan of the journalism industry and believe that traditional journalism is dying at the expense of money and greed (but I&amp;rsquo;ll probably go on and on about this in a blog post later).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

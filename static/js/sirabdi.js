@@ -158,37 +158,95 @@ document.addEventListener('DOMContentLoaded', function() {
                 audio.play();
                 playIcon.style.display = 'none';
                 pauseIcon.style.display = 'block';
+                player.classList.add('playing'); // Add playing class
             } else {
                 audio.pause();
                 playIcon.style.display = 'block';
                 pauseIcon.style.display = 'none';
+                // Don't remove playing class immediately on pause to keep layout stable
+                // player.classList.remove('playing'); 
             }
         });
 
-        // Update Progress and Time
-        audio.addEventListener('timeupdate', () => {
-            const percent = (audio.currentTime / audio.duration) * 100;
-            progressFill.style.width = `${percent}%`;
-            currentTimeDisplay.textContent = formatTime(audio.currentTime);
-        });
+        // Dragging Logic
+        let isDragging = false;
 
-        // Set Duration
-        audio.addEventListener('loadedmetadata', () => {
-            durationDisplay.textContent = formatTime(audio.duration);
-        });
-        
-        // Also try to set duration if metadata is already loaded
-        if (audio.readyState >= 1) {
-           durationDisplay.textContent = formatTime(audio.duration);
-        }
-
-        // Seek
-        progressContainer.addEventListener('click', (e) => {
+        function updateProgress(e) {
             const width = progressContainer.clientWidth;
-            const clickX = e.offsetX;
+            // Get X coordinate relative to the container
+            const rect = progressContainer.getBoundingClientRect();
+            let clickX = e.clientX - rect.left;
+            
+            // Clamp between 0 and width
+            clickX = Math.max(0, Math.min(clickX, width));
+            
             const duration = audio.duration;
             if (duration) {
-                audio.currentTime = (clickX / width) * duration;
+                const percent = (clickX / width) * 100;
+                progressFill.style.width = `${percent}%`;
+                const time = (clickX / width) * duration;
+                currentTimeDisplay.textContent = formatTime(time);
+            }
+        }
+
+        progressContainer.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            updateProgress(e);
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                updateProgress(e);
+            }
+        });
+
+        document.addEventListener('mouseup', (e) => {
+            if (isDragging) {
+                // Commit the final time
+                const width = progressContainer.clientWidth;
+                const rect = progressContainer.getBoundingClientRect();
+                let clickX = e.clientX - rect.left;
+                
+                clickX = Math.max(0, Math.min(clickX, width));
+                
+                const duration = audio.duration;
+                if (duration) {
+                    let newTime = (clickX / width) * duration;
+                    audio.currentTime = newTime;
+                }
+                isDragging = false;
+            }
+        });
+
+        // Set Duration Helper
+        const setDuration = () => {
+             if(audio.duration && !isNaN(audio.duration) && audio.duration !== Infinity) {
+                 durationDisplay.textContent = formatTime(audio.duration);
+                 return true;
+             }
+             return false;
+        };
+
+        // Event listener for metadata
+        audio.addEventListener('loadedmetadata', setDuration);
+        
+        // Check immediately and poll if needed (fixes "--:--" issue on some browsers)
+        if (!setDuration()) {
+            const checkDuration = setInterval(() => {
+                if (setDuration()) {
+                    clearInterval(checkDuration);
+                }
+            }, 100);
+            // Stop checking after 5 seconds to prevent infinite polling
+            setTimeout(() => clearInterval(checkDuration), 5000);
+        }
+
+        // Update Progress and Time (only if not dragging)
+        audio.addEventListener('timeupdate', () => {
+            if (!isDragging) {
+                const percent = (audio.currentTime / audio.duration) * 100;
+                progressFill.style.width = `${percent}%`;
+                currentTimeDisplay.textContent = formatTime(audio.currentTime);
             }
         });
 
@@ -198,6 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
             pauseIcon.style.display = 'none';
             progressFill.style.width = '0%';
             currentTimeDisplay.textContent = '0:00';
+            player.classList.remove('playing'); // Remove playing class on end (resets animation)
         });
     });
 });
