@@ -9,6 +9,7 @@ description = "My PT2 of looking into Desires"
 <div style="text-align: center; font-style: italic; margin: 30px 0;">
 "Man is broad, too broad. I'd have him narrower."<br>
 — Fyodor Dostoevsky
+
 </div>
 
 This is a continuation of my earlier thoughts on desire. I still don’t have clear answers, but I am starting to see the layers more clearly. The surface is really obvious. Beneath it, things get harder and harder to define.

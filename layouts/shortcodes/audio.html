@@ -1,0 +1,29 @@
+<div class="audio-player-wrapper">
+    {{ if .Get 1 }}<div class="audio-caption">{{ .Get 1 }}</div>{{ end }}
+    <div class="custom-audio-player">
+        <audio preload="metadata" class="audio-element">
+            <source src="{{ .Get 0 | relURL }}" type="audio/mp4">
+            <source src="{{ .Get 0 | relURL }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <button class="play-pause-btn" aria-label="Play">
+            <svg class="play-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M8 5v14l11-7z" fill="currentColor"/>
+            </svg>
+            <svg class="pause-icon" viewBox="0 0 24 24" width="24" height="24" style="display: none;">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/>
+            </svg>
+        </button>
+        
+        <div class="time-display current-time">0:00</div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        
+        <div class="time-display duration">--:--</div>
+    </div>
+</div>

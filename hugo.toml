@@ -14,3 +14,7 @@ title = 'Sir Abdisalam | The Website'
 
 [build]
   noJSConfigInAssets = true
+  buildFuture = true
+
+[params]
+mainSections = ["blog"]
