@@ -1,6 +1,6 @@
 +++
 title = "Random Thought On The Brothers Karamazov"
-date = 2025-10-28T12:00:00-06:00
+date = 2025-12-31T12:00:00-06:00
 tags = ["Free-Writing"]
 description = "Abdi and his thoughts on The Brothers Karamazov - It will be updated as I go through the book"
 draft = false

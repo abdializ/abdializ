@@ -10,7 +10,16 @@
 </head>
 <body>
    
-    
+    <!-- New Blog Post Notification -->
+    {{ $latestPost := index (where .Site.RegularPages "Section" "blog") 0 }}
+    {{ if $latestPost }}
+    <div style="text-align: center;">
+        <a href="{{ $latestPost.Permalink }}" class="new-post-notification">
+            <span class="notification-text">New Post:</span>
+            <span class="notification-title">{{ $latestPost.Title }}</span>
+        </a>
+    </div>
+    {{ end }}
     
     <div class="xyz" id="container">
         <div class="spinning-a">A</div>
