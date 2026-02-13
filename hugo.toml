@@ -8,6 +8,9 @@ title = 'Sir Abdisalam | The Website'
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
+  [markup.highlight]
+    noClasses = false
+    guessSyntax = true
 
 [server]
   watch = false

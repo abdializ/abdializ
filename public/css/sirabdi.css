@@ -1669,3 +1669,324 @@ body.light-mode .notification-title {
         font-size: 0.75rem;
     }
 }
+
+/* --- Code Block Styling (Caramel Coffee) --- */
+
+/* Base code block styling */
+pre {
+  background-color: #1e1e1e;  /* Slightly lighter dark background */
+  color: #d4d4d4;
+  padding: 1.5rem;
+  border-radius: 3px; /* Reduced from 12px for sharper look */
+  overflow-x: auto;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.95rem;
+  line-height: 1.6; /* Improved readability */
+  margin: 2.5rem 0;
+  border: 1px solid #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+}
+
+/* Light Mode Code Blocks - Creamy/Caramel Premium */
+body.light-mode pre {
+  background-color: #fffaf5; /* Warmer, richer cream */
+  color: #40280b; /* Dark coffee text */
+  border-color: rgba(230, 210, 181, 0.6); /* Soft caramel border */
+  box-shadow: 0 8px 24px rgba(146, 133, 133, 0.12); /* Soft, diffused shadow */
+}
+
+/* Inline code styling */
+code {
+  font-family: 'Source Code Pro', monospace;
+  background-color: rgba(255, 178, 85, 0.15);
+  color: #ffb255;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px; /* Reduced from 6px */
+  font-size: 0.9em;
+}
+
+body.light-mode code {
+  background-color: rgba(255, 178, 85, 0.2); /* Warm caramel tint */
+  color: #b45309; /* Deep caramel text */
+}
+
+/* Override inline code inside pre blocks */
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+/* Syntax Highlighting Colors (Chroma/Hugo Compatible Classes) */
+
+/* Comments - Warm Grey */
+.chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs { color: #858585; font-style: italic; }
+
+/* Keywords - Soft Pink/Red */
+.chroma .k, .chroma .kd, .chroma .kp, .chroma .kr, .chroma .kt { color: #ff5c57; font-weight: bold; }
+
+/* Strings - Warm Gold */
+.chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd, .chroma .s2, .chroma .se, .chroma .sh, .chroma .si, .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss { color: #f3f99d; }
+
+/* Numbers - Purple */
+.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo { color: #bd93f9; }
+
+/* Operators */
+.chroma .o, .chroma .ow { color: #ff5c57; }
+
+/* Functions - Green/Blue */
+.chroma .n, .chroma .na, .chroma .nb, .chroma .nc, .chroma .no, .chroma .nd, .chroma .ni, .chroma .ne, .chroma .nf, .chroma .nl, .chroma .nn, .chroma .nt, .chroma .nv, .chroma .nx { color: #5af78e; }
+
+
+/* Light Mode Syntax Overrides (Caramel Coffee Palette) - Refined */
+
+/* Comments (Light Mode) - Warm Taupe */
+body.light-mode .chroma .c, 
+body.light-mode .chroma .ch, 
+body.light-mode .chroma .cm, 
+body.light-mode .chroma .c1, 
+body.light-mode .chroma .cs { color: #a89f91; font-style: italic; }
+
+/* Keywords (Light Mode) - Burnt Orange / Rust */
+body.light-mode .chroma .k, 
+body.light-mode .chroma .kd, 
+body.light-mode .chroma .kp, 
+body.light-mode .chroma .kr, 
+body.light-mode .chroma .kt { color: #c05621; font-weight: bold; }
+
+/* Strings (Light Mode) - Olive / Gold */
+body.light-mode .chroma .s, 
+body.light-mode .chroma .sa, 
+body.light-mode .chroma .sb, 
+body.light-mode .chroma .sc, 
+body.light-mode .chroma .dl, 
+body.light-mode .chroma .sd, 
+body.light-mode .chroma .s2, 
+body.light-mode .chroma .se, 
+body.light-mode .chroma .sh, 
+body.light-mode .chroma .si, 
+body.light-mode .chroma .sx, 
+body.light-mode .chroma .sr, 
+body.light-mode .chroma .s1, 
+body.light-mode .chroma .ss { color: #857f26; }
+
+/* Numbers (Light Mode) - Deep Purple */
+body.light-mode .chroma .m, 
+body.light-mode .chroma .mb, 
+body.light-mode .chroma .mf, 
+body.light-mode .chroma .mh, 
+body.light-mode .chroma .mi, 
+body.light-mode .chroma .il, 
+body.light-mode .chroma .mo { color: #6b46c1; }
+
+/* Operators (Light Mode) - Dark Roast */
+body.light-mode .chroma .o, 
+body.light-mode .chroma .ow { color: #40280b; }
+
+/* Functions (Light Mode) - Strong Coffee */
+body.light-mode .chroma .n, 
+body.light-mode .chroma .na, 
+body.light-mode .chroma .nb, 
+body.light-mode .chroma .nc, 
+body.light-mode .chroma .no, 
+body.light-mode .chroma .nd, 
+body.light-mode .chroma .ni, 
+body.light-mode .chroma .ne, 
+body.light-mode .chroma .nf, 
+body.light-mode .chroma .nl, 
+body.light-mode .chroma .nn, 
+body.light-mode .chroma .nt, 
+body.light-mode .chroma .nv, 
+body.light-mode .chroma .nx { color: #2c5282; }
+
+/* --- End Code Block Styling --- */
+
+/* --- Side-by-Side Images (Blog Post) --- */
+.side-by-side-images {
+  display: flex;
+  gap: 15px; /* Space between images */
+  width: 100%;
+  margin: 2.5rem 0;
+  justify-content: center;
+}
+
+.side-by-side-images img {
+  width: 48%; /* Roughly half width */
+  border-radius: 0 !important; /* No rounded corners as requested */
+  height: auto;
+  margin: 0;
+  max-width: none; /* Allow them to scale up */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slight shadow for lift */
+  transition: transform 0.3s ease;
+}
+
+.side-by-side-images img:hover {
+  transform: scale(1.02);
+}
+
+/* Response for mobile */
+@media (max-width: 768px) {
+  .side-by-side-images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .side-by-side-images img {
+    width: 100%;
+  }
+}
+
+/* --- Lightbox / Modal Feature --- */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 11, 9, 0.85); /* Slightly darker/transparent */
+  backdrop-filter: blur(8px); /* Blur effect */
+  -webkit-backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px; /* Slight round for modal image */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.lightbox-overlay.active .lightbox-image {
+  transform: scale(1);
+}
+
+.lightbox-caption {
+  color: #ffb255; /* Gold text */
+  margin-top: 1.5rem;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+body.light-mode .lightbox-caption {
+  color: #fff1e1; /* Light mode caption text */
+  background-color: rgba(64, 40, 11, 0.8); /* Dark coffee bg */
+}
+
+/* Cursor pointer on clickable images */
+.side-by-side-images img {
+  cursor: zoom-in;
+  /* Fix specific sandwiched issue by preventing full vertical stretch */
+  align-self: flex-start; /* Or center, prevents stretching height */
+  height: auto; 
+  /* Also force aspect ratio if needed, but flex-start usually fixes distortion */
+  object-fit: contain;
+}
+
+/* --- Side-by-Side Images (Blog Post) --- */
+.side-by-side-images {
+  display: flex;
+  gap: 15px; /* Space between images */
+  width: 100%;
+  margin: 2.5rem 0;
+  justify-content: center;
+}
+
+.side-by-side-images img {
+  width: 48%; /* Roughly half width */
+  border-radius: 0 !important; /* No rounded corners as requested */
+  height: auto;
+  margin: 0;
+  max-width: none; /* Allow them to scale up */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slight shadow for lift */
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+  object-fit: cover;
+}
+
+.side-by-side-images img:hover {
+  transform: scale(1.02);
+}
+
+/* Response for mobile */
+@media (max-width: 768px) {
+  .side-by-side-images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .side-by-side-images img {
+    width: 100%;
+  }
+}
+
+/* --- Lightbox / Modal Feature --- */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 11, 9, 0.85); /* Slightly darker/transparent */
+  backdrop-filter: blur(8px); /* Blur effect */
+  -webkit-backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.lightbox-image {
+  max-width: 90vw;
+  max-height: 85vh;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  transform: scale(0.95);
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1); /* Faster transition for zoom */
+  border-radius: 0; /* Sharp corners for modal image too */
+  cursor: zoom-in;
+}
+
+.lightbox-overlay.active .lightbox-image {
+  transform: scale(1);
+}
+
+.lightbox-caption {
+  color: #ffb255; /* Gold text */
+  margin-top: 1.5rem;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  pointer-events: auto; /* Ensure caption is clickable */
+}
+
+body.light-mode .lightbox-caption {
+  color: #fff1e1; /* Light mode caption text */
+  background-color: rgba(64, 40, 11, 0.8); /* Dark coffee bg */
+}
