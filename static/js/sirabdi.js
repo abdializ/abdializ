@@ -130,7 +130,7 @@ function toggleThought(element) {
 }
 
 // Custom Audio Player Logic
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const audioPlayers = document.querySelectorAll('.custom-audio-player');
 
     audioPlayers.forEach(player => {
@@ -176,10 +176,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Get X coordinate relative to the container
             const rect = progressContainer.getBoundingClientRect();
             let clickX = e.clientX - rect.left;
-            
+
             // Clamp between 0 and width
             clickX = Math.max(0, Math.min(clickX, width));
-            
+
             const duration = audio.duration;
             if (duration) {
                 const percent = (clickX / width) * 100;
@@ -206,9 +206,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const width = progressContainer.clientWidth;
                 const rect = progressContainer.getBoundingClientRect();
                 let clickX = e.clientX - rect.left;
-                
+
                 clickX = Math.max(0, Math.min(clickX, width));
-                
+
                 const duration = audio.duration;
                 if (duration) {
                     let newTime = (clickX / width) * duration;
@@ -220,16 +220,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Set Duration Helper
         const setDuration = () => {
-             if(audio.duration && !isNaN(audio.duration) && audio.duration !== Infinity) {
-                 durationDisplay.textContent = formatTime(audio.duration);
-                 return true;
-             }
-             return false;
+            if (audio.duration && !isNaN(audio.duration) && audio.duration !== Infinity) {
+                durationDisplay.textContent = formatTime(audio.duration);
+                return true;
+            }
+            return false;
         };
 
         // Event listener for metadata
         audio.addEventListener('loadedmetadata', setDuration);
-        
+
         // Check immediately and poll if needed (fixes "--:--" issue on some browsers)
         if (!setDuration()) {
             const checkDuration = setInterval(() => {
@@ -259,4 +259,150 @@ document.addEventListener('DOMContentLoaded', function() {
             player.classList.remove('playing'); // Remove playing class on end (resets animation)
         });
     });
+});
+
+// --- Lightbox / Modal Logic ---
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Select all images intended for lightbox
+    const galleryImages = document.querySelectorAll('.lightbox-trigger, .side-by-side-images img');
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', function () {
+            openLightbox(this);
+        });
+    });
+});
+
+let isZoomed = false;
+
+function openLightbox(imgElement) {
+    let overlay = document.querySelector('.lightbox-overlay');
+
+    // Create overlay if it doesn't exist
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'lightbox-overlay';
+
+        // Image container
+        const img = document.createElement('img');
+        img.className = 'lightbox-image';
+
+        // Caption
+        const caption = document.createElement('div');
+        caption.className = 'lightbox-caption';
+
+        overlay.appendChild(img);
+        overlay.appendChild(caption);
+        document.body.appendChild(overlay);
+
+        // Click wrapper to close (but not on image if zooming)
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target.classList.contains('lightbox-caption')) {
+                closeLightbox();
+            }
+        });
+
+        // Zoom Logic
+        img.addEventListener('click', function (e) {
+            e.stopPropagation(); // prevent closing
+            toggleZoom(e);
+        });
+
+        img.addEventListener('mousemove', function (e) {
+            if (isZoomed) panImage(e, this);
+        });
+    }
+
+    const expandedImg = overlay.querySelector('.lightbox-image');
+    const caption = overlay.querySelector('.lightbox-caption');
+
+    // Reset zoom state
+    isZoomed = false;
+    expandedImg.style.transform = 'scale(1)';
+    expandedImg.style.cursor = 'zoom-in';
+    expandedImg.style.transformOrigin = 'center center';
+
+    expandedImg.src = imgElement.src;
+    expandedImg.alt = imgElement.alt;
+    caption.textContent = imgElement.alt;
+
+    // Show overlay
+    overlay.style.display = 'flex';
+    requestAnimationFrame(() => {
+        overlay.classList.add('active');
+    });
+
+    document.body.style.overflow = 'hidden';
+}
+
+function toggleZoom(e) {
+    const img = e.target;
+    if (!isZoomed) {
+        // Zoom In
+        isZoomed = true;
+        img.style.cursor = 'zoom-out';
+
+        // Set origin to click position for smooth zoom
+        const rect = img.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        img.style.transformOrigin = `${x}px ${y}px`;
+
+        img.style.transform = 'scale(2.5)'; // High zoom
+    } else {
+        // Zoom Out
+        isZoomed = false;
+        img.style.cursor = 'zoom-in';
+        img.style.transform = 'scale(1)';
+        setTimeout(() => {
+            img.style.transformOrigin = 'center center';
+        }, 300); // Reset origin after transition
+    }
+}
+
+function panImage(e, img) {
+    const rect = img.getBoundingClientRect();
+    // Calculate mouse position relative to image
+    // Note: getBoundingClientRect changes with transform, so we need the offset within the element
+    // Actually, simplest 'magnifier' effect is to move transform-origin
+
+    // However, changing transform-origin moves the element.
+    // Better strategy for "lens":
+    // 1. We are zoomed in (scale 2.5)
+    // 2. We want the part of the image under the mouse to show.
+    // 3. This means transforming origin to mouse pos.
+
+    // But we need to use 'offsetX' and 'offsetY' relative to the *unzoomed* size?
+    // Mouseover on a scaled element is tricky.
+
+    // Let's use a simpler but robust approach:
+    // Update transform-origin based on mouse position within the *box*.
+    // Since the element fills a lot of screen, e.clientX is good relative to window.
+    // But we want relative to the *image*.
+
+    // Easiest "Magnifier" implementation:
+    const x = e.offsetX;
+    const y = e.offsetY;
+
+    img.style.transformOrigin = `${x}px ${y}px`;
+}
+
+function closeLightbox() {
+    const overlay = document.querySelector('.lightbox-overlay');
+    if (overlay) {
+        overlay.classList.remove('active');
+        setTimeout(() => {
+            overlay.style.display = 'none';
+        }, 300);
+        document.body.style.overflow = '';
+        isZoomed = false; // Reset
+    }
+}
+
+// Close on Escape key
+document.addEventListener('keydown', function (event) {
+    if (event.key === "Escape") {
+        closeLightbox();
+    }
 });

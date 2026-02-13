@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5X4TTXE5KW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5X4TTXE5KW');
+    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script>
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light-mode') {
+        document.documentElement.classList.add('light-mode');
+    }
+})();
+</script>
+
+
+<title>I Built Inbox Subscription Cleaner Because My Gmail Was Cooked | Sir Abdisalam | The Website</title>
+
+
+<meta name="description" content="How I went from drowning in subscription emails to building my own tool to take back control of my inbox.">
+<meta name="keywords" content="">
+<meta name="author" content="Your Name">
+
+
+<meta property="og:title" content="I Built Inbox Subscription Cleaner Because My Gmail Was Cooked | Sir Abdisalam | The Website">
+<meta property="og:description" content="How I went from drowning in subscription emails to building my own tool to take back control of my inbox.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:1313/blog/inbox-subscription-cleaner/">
+<meta property="og:image" content="/default-og-image.png">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="I Built Inbox Subscription Cleaner Because My Gmail Was Cooked | Sir Abdisalam | The Website">
+<meta name="twitter:description" content="How I went from drowning in subscription emails to building my own tool to take back control of my inbox.">
+<meta name="twitter:image" content="/default-og-image.png">
+
+
+<link rel="icon" type="image/x-icon" href="/images/favicon34.ico">
+
+
+<link rel="stylesheet" href="/css/sirabdi.css">
+
+
+
+
+</head>
+
+<body>
+    
+    <button id="theme-toggle" class="mode-button">Mode</button>
+
+    
+    
+<header class="site-header">
+    <a href="/" class="site-logo">
+        <h1 class="logo">Sir Abdisalam | The Website</h1>
+    </a>
+</header>
+
+    
+    <div id="content">
+<div class="container" role="main">
+  
+  
+  <nav class="post-nav">
+    <a href="/blog/" class="back-to-blog">← Back to Blog</a>
+  </nav>
+  
+
+  <article class="article">
+    
+    <header class="post-header">
+      <h1 class="post-title">I Built Inbox Subscription Cleaner Because My Gmail Was Cooked</h1>
+
+      
+      
+      
+      
+      <div class="post-meta">
+        <time class="post-date" datetime=" 2026-02-12">
+          February 12, 2026
+        </time>
+        <span class="meta-separator">•</span>
+        <span class="reading-time">6 min read</span>
+        <span class="meta-separator">•</span>
+        <span class="word-count">924 words</span>
+        
+      </div>
+      
+
+      
+      <p class="post-description">How I went from drowning in subscription emails to building my own tool to take back control of my inbox.</p>
+      
+    </header>
+
+    
+    <div class="post-content">
+      <p><I>(hint: click on the image to zoom in)</I></p>
+<p>I have had the same Gmail since 2017. Back then it was clean, fresh, full of potential. Fast forward to now and it looked like a digital flea market. Every brand I ever looked at once was suddenly my pen pal. My inbox was not an inbox anymore. It was a subscription museum.</p>
+<div class="side-by-side-images">
+  <img src="/images/dashboard-cleana.png" alt="Inbox Subscription Cleaner Dashboard" class="lightbox-trigger">
+  <img src="/images/popup-cleana.png" alt="Inbox Subscription Cleaner Popup" class="lightbox-trigger">
+</div>
+<p>I tried the normal &ldquo;just unsubscribe&rdquo; advice. Sounds good until you do it for the 47th time in a row. Open email. Scroll to the footer like you are searching for treasure. Click tiny link. Land on a page that says, <em>&ldquo;Are you sure you want to leave our family?&rdquo;</em> Yes. I am sure. Then repeat. At some point I realized this was not productivity. This was unpaid labor.</p>
+<p>So I built <strong>Inbox Subscription Cleaner</strong> <i> (I know, I know, very booring name) </i> because I wanted one control center for the mess. I wanted to see which senders were spamming me the hardest, how often they were hitting my inbox, and whether I could unsubscribe safely in one click or needed to do it manually. Basically, I wanted my inbox to stop looking like Times Square.</p>
+<h2 id="the-scanner--the-purpose-of-the-whole-thing">The Scanner : The Purpose of the Whole Thing</h2>
+<p>Technically, the scanner is the brain. First it checks for <code>List-Unsubscribe</code> headers, which are the grown-up, standards-based way of unsubscribing. If that is missing, it scans the email body for unsubscribe-style links. The annoying part is that senders do not always say &ldquo;unsubscribe.&rdquo; They say stuff like &ldquo;manage preferences&rdquo; or &ldquo;opt out&rdquo; or &ldquo;turn these emails off.&rdquo; So I made the parser look for all those variations.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">unsubPhrases</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;unsubscrib|opt.?out|turn.?(?:them|it)?.?off|stop.?(?:receiving)|manage.?preferences&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">hrefRegex</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="sb">`&lt;a\\s[^&gt;]*href=[&#34;&#39;]([^&#34;&#39;]*(?:</span><span class="si">${</span><span class="nx">unsubPhrases</span><span class="si">}</span><span class="sb">)[^&#34;&#39;]*)[&#34;&#39;][^&gt;]*&gt;`</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;gi&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span></code></pre></div><p>Then I group everything by sender and score confidence. If it looks safe, the user can move fast. If it looks sketchy, it gets flagged for review. I did not want fake confidence in the UI. I wanted honest confidence. Big difference. The app should never act like it knows more than it does.</p>
+<h2 id="handling-the-stubborn-senders">Handling the Stubborn Senders</h2>
+<p>I also added a <code>manual_required</code> state for the stubborn senders who act like unsubscribing is a side quest. In those cases, the tool gives a <strong>&ldquo;Find in Gmail&rdquo;</strong> shortcut so users can jump straight to that sender&rsquo;s emails and finish the job quickly.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">buildGmailSenderSearch</span><span class="p">(</span><span class="nx">senderEmail</span>: <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">q</span> <span class="o">=</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="sb">`from:</span><span class="si">${</span><span class="nx">senderEmail</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="sb">`https://mail.google.com/mail/u/0/#search/</span><span class="si">${</span><span class="nx">q</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>No more digging through your inbox manually. One click and you are looking at every email that sender ever sent you.</p>
+<h2 id="speed">Speed</h2>
+<p>Now let us talk speed, because waiting kills the purpose. I use <strong>optimistic UI</strong>, so when you click unsubscribe, the row updates immediately. The network request runs in the background. If something fails, it rolls back and tells you. So the app feels instant instead of making you stare at a spinner like it is loading a PlayStation 2 save file.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">optimisticUnsubscribe</span><span class="p">(</span><span class="nx">id</span>: <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">previous</span> <span class="o">=</span> <span class="nx">getState</span><span class="p">().</span><span class="nx">items</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">setState</span><span class="p">((</span><span class="nx">s</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">items</span>: <span class="kt">s.items.map</span><span class="p">((</span><span class="nx">x</span><span class="p">)</span> <span class="o">=&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">x</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="nx">id</span> <span class="o">?</span> <span class="p">{</span> <span class="p">...</span><span class="nx">x</span><span class="p">,</span> <span class="nx">status</span><span class="o">:</span> <span class="s1">&#39;unsubscribed&#39;</span> <span class="p">}</span> <span class="o">:</span> <span class="nx">x</span>
+</span></span><span class="line"><span class="cl">    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">await</span> <span class="nx">api</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setState</span><span class="p">({</span> <span class="nx">items</span>: <span class="kt">previous</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">notify</span><span class="p">(</span><span class="s1">&#39;Action failed. Restored previous state.&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>The idea is simple. Trust the action, update the screen, and only course-correct if the server says otherwise. I didn&rsquo;t want to sit there wondering if something happened.</p>
+<h2 id="the-vibes--caramel-coffee-theme-and-dark-of-course">The Vibes : Caramel Coffee Theme and Dark (of course)</h2>
+<p>Design-wise, I made a theme called <strong>Caramel Coffee</strong> because I did not want the app to look like every other cold, blue SaaS clone. Warm cream background, dark roast text, caramel accent. If I am cleaning inbox chaos, I do not need my interface screaming at me too.</p>
+<h2 id="why-i-built-it">Why I Built It</h2>
+<p>At the end of the day, this project started for one reason: my Gmail was becoming unusable and I was also very bored. Years of subscriptions turned it into a junkyard of an email account. I wanted to fix it properly, so I built a system instead of relying on willpower. And honestly, it feels good opening my inbox now and not getting jumped by twelve &ldquo;last chance&rdquo; emails from brands I forgot existed.</p>
+<p>THIS WAS GREAT FUN, I LOVED EVERY BLOODY SECOND OF IT</p>
+<p>ps. if you want to check out the code email me at <strong><a href="mailto:abdi@abdisalam.blog">abdi@abdisalam.blog</a></strong></p>
+
+    </div>
+
+    
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        <span class="tags-label">Tagged with:</span>
+        
+        <a href="/tags/software-engineering/" class="post-tag">Software Engineering</a>
+        
+        <a href="/tags/projects/" class="post-tag">Projects</a>
+        
+        <a href="/tags/gmail/" class="post-tag">Gmail</a>
+        
+      </div>
+      
+
+      
+      <nav class="post-navigation">
+        
+
+        
+        <div class="nav-next">
+          <a href="/blog/whynow/" class="nav-link">
+            <span class="nav-label">Next →</span>
+            <span class="nav-title">Random Thought On The Brothers Karamazov</span>
+          </a>
+        </div>
+        
+      </nav>
+    </footer>
+  </article>
+</div>
+
+    </div>
+
+    
+    <script src="/js/sirabdi.js?v=1770963656"></script>
+</body>
+
+</html>
