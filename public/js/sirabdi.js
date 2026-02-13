@@ -303,7 +303,7 @@ function openLightbox(imgElement) {
             }
         });
 
-        // Zoom Logic
+        // Zoom Logic - Mouse
         img.addEventListener('click', function (e) {
             e.stopPropagation(); // prevent closing
             toggleZoom(e);
@@ -312,6 +312,15 @@ function openLightbox(imgElement) {
         img.addEventListener('mousemove', function (e) {
             if (isZoomed) panImage(e, this);
         });
+
+        // Zoom Logic - Touch (Mobile)
+        // Prevent default touch actions (scrolling) when zoomed
+        img.addEventListener('touchmove', function (e) {
+            if (isZoomed) {
+                e.preventDefault();
+                panImageTouch(e, this);
+            }
+        }, { passive: false });
     }
 
     const expandedImg = overlay.querySelector('.lightbox-image');
@@ -338,15 +347,26 @@ function openLightbox(imgElement) {
 
 function toggleZoom(e) {
     const img = e.target;
+    // Handle both mouse and touch events for coordinates
+    let clientX, clientY;
+
+    if (e.type.startsWith('touch')) {
+        clientX = e.changedTouches[0].clientX;
+        clientY = e.changedTouches[0].clientY;
+    } else {
+        clientX = e.clientX;
+        clientY = e.clientY;
+    }
+
     if (!isZoomed) {
         // Zoom In
         isZoomed = true;
         img.style.cursor = 'zoom-out';
 
-        // Set origin to click position for smooth zoom
+        // Set origin to click/tap position for smooth zoom
         const rect = img.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+        const x = clientX - rect.left;
+        const y = clientY - rect.top;
         img.style.transformOrigin = `${x}px ${y}px`;
 
         img.style.transform = 'scale(2.5)'; // High zoom
@@ -362,30 +382,22 @@ function toggleZoom(e) {
 }
 
 function panImage(e, img) {
-    const rect = img.getBoundingClientRect();
-    // Calculate mouse position relative to image
-    // Note: getBoundingClientRect changes with transform, so we need the offset within the element
-    // Actually, simplest 'magnifier' effect is to move transform-origin
-
-    // However, changing transform-origin moves the element.
-    // Better strategy for "lens":
-    // 1. We are zoomed in (scale 2.5)
-    // 2. We want the part of the image under the mouse to show.
-    // 3. This means transforming origin to mouse pos.
-
-    // But we need to use 'offsetX' and 'offsetY' relative to the *unzoomed* size?
-    // Mouseover on a scaled element is tricky.
-
-    // Let's use a simpler but robust approach:
-    // Update transform-origin based on mouse position within the *box*.
-    // Since the element fills a lot of screen, e.clientX is good relative to window.
-    // But we want relative to the *image*.
-
-    // Easiest "Magnifier" implementation:
     const x = e.offsetX;
     const y = e.offsetY;
-
     img.style.transformOrigin = `${x}px ${y}px`;
+}
+
+function panImageTouch(e, img) {
+    const rect = img.getBoundingClientRect();
+    const touch = e.touches[0];
+
+    // Calculate touch position relative to the rect
+    // Adjusting for scale to keep the 'lens' feel consistent
+    const scale = 2.5;
+    const offsetX = (touch.clientX - rect.left) / scale;
+    const offsetY = (touch.clientY - rect.top) / scale;
+
+    img.style.transformOrigin = `${offsetX}px ${offsetY}px`;
 }
 
 function closeLightbox() {

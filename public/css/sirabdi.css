@@ -1660,13 +1660,18 @@ body.light-mode .notification-title {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .new-post-notification {
-        padding: 0.3rem 0.8rem;
-        margin: 0.8rem auto 1rem auto;
+        padding: 0.25rem 0.6rem; /* reduced padding */
+        margin: 0.5rem auto 0.8rem auto; /* reduced margin */
+        gap: 0.25rem; /* reduced gap */
+        max-width: 85%; /* limit width to prevent excessive length */
+        flex-wrap: wrap; /* allow wrapping on very small screens */
+        justify-content: center;
     }
     
     .notification-text,
     .notification-title {
-        font-size: 0.75rem;
+        font-size: 0.7rem; /* slightly smaller font */
+        line-height: 1.2;
     }
 }
 
