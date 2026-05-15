@@ -1,0 +1,11 @@
+{{- if .Params.description -}}
+<p class="post-description">
+  {{- if .Params.descriptionHTML -}}
+    {{- .Params.metaDescription | default (.Params.description | plainify) | truncate 200 -}}
+  {{- else -}}
+    {{- .Params.description -}}
+  {{- end -}}
+</p>
+{{- else -}}
+<p class="post-description">{{ .Content | plainify | truncate 150 }}</p>
+{{- end -}}
