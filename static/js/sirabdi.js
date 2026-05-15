@@ -54,6 +54,100 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const booksRail = document.querySelector('.books-right-rail');
+    const booksTrigger = document.querySelector('.books-rail-mobile-trigger');
+    const booksNavLinks = document.querySelectorAll('.books-rail-nav a');
+    const booksBackdrop = document.querySelector('.books-rail-backdrop');
+    const booksClose = document.querySelector('.books-rail-close');
+
+    if (!booksRail || !booksTrigger) return;
+
+    const sectionIds = ['fiction', 'non-fiction', 'philosophy--idea-heavy-reading'];
+
+    const setOpenState = (isOpen) => {
+        booksRail.classList.toggle('is-open', isOpen);
+        booksTrigger.setAttribute('aria-expanded', String(isOpen));
+    };
+
+    const clearActive = () => {
+        booksNavLinks.forEach((a) => a.classList.remove('is-active'));
+    };
+
+    const setActiveById = (id) => {
+        if (!id) return;
+        clearActive();
+        const match = Array.from(booksNavLinks).find((a) => {
+            const href = a.getAttribute('href') || '';
+            return href === '#' + id;
+        });
+        if (match) match.classList.add('is-active');
+    };
+
+    booksTrigger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const isOpen = booksRail.classList.contains('is-open');
+        setOpenState(!isOpen);
+    });
+
+    if (booksBackdrop) {
+        booksBackdrop.addEventListener('click', function () {
+            setOpenState(false);
+        });
+    }
+
+    if (booksClose) {
+        booksClose.addEventListener('click', function (e) {
+            e.stopPropagation();
+            setOpenState(false);
+        });
+    }
+
+    booksNavLinks.forEach((link) => {
+        link.addEventListener('click', function () {
+            setOpenState(false);
+        });
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!booksRail.contains(event.target)) {
+            setOpenState(false);
+        }
+    });
+
+    const headings = sectionIds
+        .map((id) => document.getElementById(id))
+        .filter((el) => el instanceof HTMLElement);
+
+    if (headings.length && booksNavLinks.length) {
+        const io = new IntersectionObserver(
+            (entries) => {
+                const visible = entries
+                    .filter((e) => e.isIntersecting && e.intersectionRatio > 0.12)
+                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+                if (visible[0] && visible[0].target.id) {
+                    setActiveById(visible[0].target.id);
+                }
+            },
+            {
+                root: null,
+                rootMargin: '-14% 0px -52% 0px',
+                threshold: [0, 0.08, 0.15, 0.25, 0.4, 0.6],
+            }
+        );
+        headings.forEach((h) => io.observe(h));
+    }
+
+    const syncActiveFromHash = () => {
+        const raw = (window.location.hash || '').replace(/^#/, '');
+        if (sectionIds.includes(raw)) {
+            setActiveById(raw);
+        }
+    };
+    syncActiveFromHash();
+    window.addEventListener('hashchange', syncActiveFromHash);
+});
+
 // New typing animation approach
 document.addEventListener('DOMContentLoaded', function () {
     const textElement = document.getElementById('p-text');
