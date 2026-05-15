@@ -39,9 +39,46 @@
     </header>
 
     <!-- Content -->
+    {{ if eq .RelPermalink "/books/" }}
+    <div class="post-content post-content-books">
+      <div class="books-page-shell">
+        <div class="books-page-main">
+          {{ .Content }}
+        </div>
+
+        <aside class="books-right-rail" aria-label="Books page navigation">
+          <div class="books-rail-backdrop" aria-hidden="true"></div>
+          <div class="books-right-rail-inner">
+            <span class="books-rail-kicker">Bookshelf</span>
+            <div class="books-rail-mobile-stack">
+              <button
+                class="books-rail-mobile-trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="books-rail-menu-panel"
+              >
+                Menu
+              </button>
+              <div class="books-rail-menu-panel" id="books-rail-menu-panel">
+                <nav class="books-rail-nav" id="books-rail-nav">
+                  <a href="#fiction" data-books-section="fiction">Fiction</a>
+                  <a href="#non-fiction" data-books-section="non-fiction">Non-fiction</a>
+                  <a href="#philosophy--idea-heavy-reading" data-books-section="philosophy--idea-heavy-reading">Ideas</a>
+                </nav>
+                <hr class="books-rail-divider" />
+                <button type="button" class="books-rail-close">Close</button>
+              </div>
+            </div>
+            <p class="books-rail-note">Gold marks longer writing. Double asterisks mark shorter notes.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+    {{ else }}
     <div class="post-content">
       {{ .Content }}
     </div>
+    {{ end }}
 
     <!-- Post Footer -->
     <footer class="post-footer">

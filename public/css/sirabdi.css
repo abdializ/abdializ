@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 hr {
   height: 3px;
   border: none;
@@ -322,6 +326,140 @@ body {
   border: 1px dashed;
   border-color: #191919;
   margin-left: 0rem;
+}
+
+.post-content-books {
+  overflow: visible;
+}
+
+.books-page-shell {
+  position: relative;
+  padding-right: 10.5rem;
+}
+
+.post-content-books h2 {
+  scroll-margin-top: 7rem;
+}
+
+.books-page-main {
+  min-width: 0;
+}
+
+.books-right-rail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8rem;
+}
+
+.books-right-rail-inner {
+  position: fixed;
+  top: 10.5rem;
+  right: max(1.5rem, calc((100vw - 90ch) / 2 - 7.75rem));
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding-left: 1.1rem;
+}
+
+.books-right-rail-inner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  bottom: 0.1rem;
+  width: 1px;
+  background: rgba(255, 178, 85, 0.38);
+}
+
+.books-rail-kicker {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.68rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #928585;
+}
+
+.books-rail-mobile-trigger {
+  display: none;
+}
+
+.books-rail-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.books-rail-nav a {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.88rem;
+  color: #928585;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.books-rail-nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0.45rem;
+  height: 1px;
+  background: currentColor;
+  transform: translateY(-50%);
+  opacity: 0.75;
+}
+
+.books-rail-nav a:hover {
+  color: #ffb255;
+  transform: translateX(0.15rem);
+}
+
+.books-rail-note {
+  margin: 0;
+  max-width: 7rem;
+  font-size: 0.74rem;
+  line-height: 1.7;
+  color: rgba(146, 133, 133, 0.9);
+}
+
+.books-rail-backdrop {
+  display: none;
+}
+
+/* Desktop: mobile stack is transparent to layout; panel + chrome hidden */
+.books-rail-mobile-stack {
+  display: contents;
+}
+
+.books-rail-menu-panel {
+  display: contents;
+}
+
+.books-rail-divider,
+.books-rail-close {
+  display: none;
+}
+
+body.light-mode .books-right-rail-inner::before {
+  background: rgba(0, 68, 204, 0.26);
+}
+
+body.light-mode .books-rail-kicker,
+body.light-mode .books-rail-nav a {
+  color: #002266;
+}
+
+body.light-mode .books-rail-nav a:hover {
+  color: #1a73e8;
+}
+
+body.light-mode .books-rail-note {
+  color: rgba(10, 31, 68, 0.8);
 }
 /* end */
 
@@ -686,11 +824,380 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  #theme-toggle {
+    top: 0.9rem;
+    left: 0.9rem;
+    width: auto;
+    min-width: 4.5rem;
+    height: 2.5rem;
+    padding: 0.5rem 0.85rem;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: 999px;
+  }
+
   .container img {
     width: 100%; /* Make the image fill its container */
     max-height: 300px; /* Optional: Restrict the height */
     object-fit: cover; /* Ensure the image scales without distortion */
+  }
+
+  .books-page-shell {
+    padding-right: 0;
+  }
+
+  .books-page-main {
+    padding-bottom: 5.5rem;
+  }
+
+  .books-rail-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 45;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    background: transparent;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s ease;
+  }
+
+  .books-right-rail.is-open .books-rail-backdrop {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  body.light-mode .books-rail-backdrop {
+    background: transparent;
+  }
+
+  /* Aside stays in document flow (no height) so fixed children anchor to the viewport */
+  .books-right-rail {
+    position: static;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    pointer-events: none;
+    transform: none;
+  }
+
+  .books-right-rail.is-open {
+    pointer-events: auto;
+  }
+
+  .books-right-rail-inner {
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+    pointer-events: none;
+  }
+
+  .books-right-rail.is-open .books-right-rail-inner {
+    z-index: 55;
+  }
+
+  .books-rail-mobile-stack {
+    position: fixed;
+    left: auto;
+    right: max(0.75rem, env(safe-area-inset-right, 0px));
+    bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+    z-index: 60;
+    width: auto;
+    max-width: none;
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .books-right-rail-inner::before {
+    display: none;
+  }
+
+  .books-rail-kicker {
+    display: none;
+  }
+
+  .books-rail-mobile-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1.72rem;
+    padding: 0 0.72rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: #2a2a2a;
+    color: #fafafa;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.76rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.22),
+      0 1px 0 rgba(255, 255, 255, 0.04) inset;
+    transition: background 0.22s ease, border-color 0.22s ease, transform 0.12s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (hover: hover) {
+    .books-rail-mobile-trigger:hover {
+      background: #2d2d2d;
+      border-color: rgba(255, 255, 255, 0.085);
+    }
+  }
+
+  .books-rail-mobile-trigger:active {
+    transform: scale(0.98);
+  }
+
+  .books-rail-menu-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform-origin: bottom right;
+    min-width: 8.5rem;
+    max-width: min(10rem, 78vw);
+    padding: 0.2rem 0 0.18rem;
+    border-radius: 1.45rem;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: #1a1a1a;
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.28),
+      0 8px 22px rgba(0, 0, 0, 0.22);
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.86) translateY(6px);
+    pointer-events: none;
+    transition:
+      opacity 0.2s ease-in,
+      transform 0.26s cubic-bezier(0.52, 0, 0.86, 0.44),
+      visibility 0s linear 0.26s;
+  }
+
+  .books-right-rail.is-open .books-rail-menu-panel {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    pointer-events: auto;
+    transition:
+      opacity 0.22s ease-out,
+      transform 0.4s cubic-bezier(0.28, 1.65, 0.48, 1),
+      visibility 0s linear 0s;
+  }
+
+  .books-right-rail.is-open .books-rail-mobile-trigger {
+    display: none;
+  }
+
+  .books-rail-nav {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.08rem 0.12rem 0;
+    margin: 0;
+    min-width: 0;
+    border: none;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+    filter: none;
+    transform: none;
+  }
+
+  .books-rail-nav a {
+    display: block;
+    padding: 0.3rem 0.65rem;
+    margin: 0;
+    border: none;
+    border-radius: 1rem;
+    background: transparent;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #8c8c8c;
+    text-decoration: none;
+    transition: color 0.18s ease, background-color 0.18s ease;
+  }
+
+  .books-rail-nav a.is-active {
+    color: #f2f2f2;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .books-rail-nav a:focus-visible {
+    outline: none;
+    color: #9a9a9a;
+    background-color: rgba(255, 255, 255, 0.018);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.09);
+  }
+
+  @media (hover: hover) {
+    .books-rail-nav a:hover {
+      color: #949494;
+      background-color: rgba(255, 255, 255, 0.014);
+    }
+  }
+
+  .books-rail-nav a::before,
+  .books-rail-nav a::after {
+    display: none !important;
+  }
+
+  .books-rail-divider {
+    display: block;
+    height: 1px;
+    margin: 0.12rem 0.65rem 0.14rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.07);
+  }
+
+  .books-rail-close {
+    display: block;
+    margin: 0 0.12rem 0.12rem;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 1rem;
+    background: transparent;
+    color: #8c8c8c;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.18s ease, background-color 0.18s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .books-rail-close:focus-visible {
+    outline: none;
+    color: #9a9a9a;
+    background-color: rgba(255, 255, 255, 0.018);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.09);
+  }
+
+  @media (hover: hover) {
+    .books-rail-close:hover {
+      color: #949494;
+      background-color: rgba(255, 255, 255, 0.014);
+    }
+  }
+
+  .books-rail-note {
+    display: none;
+  }
+
+  body.light-mode .books-rail-mobile-trigger {
+    background: #ececec;
+    color: #141414;
+    border-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.035);
+  }
+
+  @media (hover: hover) {
+    body.light-mode .books-rail-mobile-trigger:hover {
+      background: #eaeaea;
+      border-color: rgba(0, 0, 0, 0.065);
+    }
+  }
+
+  body.light-mode .books-rail-menu-panel {
+    background: #fafafa;
+    border-color: rgba(0, 0, 0, 0.06);
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.04),
+      0 8px 22px rgba(0, 0, 0, 0.07);
+  }
+
+  body.light-mode .books-rail-nav a {
+    color: #6b6b6b;
+  }
+
+  body.light-mode .books-rail-nav a.is-active {
+    color: #0a0a0a;
+  }
+
+  body.light-mode .books-rail-nav a:focus-visible {
+    color: #525252;
+    background-color: rgba(0, 0, 0, 0.03);
+    box-shadow: 0 0 0 1px rgba(0, 68, 204, 0.12);
+  }
+
+  @media (hover: hover) {
+    body.light-mode .books-rail-nav a:hover {
+      color: #5c5c5c;
+      background-color: rgba(0, 0, 0, 0.024);
+    }
+  }
+
+  body.light-mode .books-rail-divider {
+    background: rgba(0, 0, 0, 0.07);
+  }
+
+  body.light-mode .books-rail-close {
+    color: #6b6b6b;
+  }
+
+  body.light-mode .books-rail-close:focus-visible {
+    color: #525252;
+    background-color: rgba(0, 0, 0, 0.03);
+    box-shadow: 0 0 0 1px rgba(0, 68, 204, 0.12);
+  }
+
+  @media (hover: hover) {
+    body.light-mode .books-rail-close:hover {
+      color: #5c5c5c;
+      background-color: rgba(0, 0, 0, 0.024);
+    }
+  }
+}
+
+@media (max-width: 1024px) and (prefers-reduced-motion: reduce) {
+  .books-rail-backdrop,
+  .books-rail-mobile-trigger,
+  .books-rail-nav a,
+  .books-rail-close {
+    transition-duration: 0.08s !important;
+  }
+
+  .books-rail-menu-panel {
+    transform: translateY(4px) scale(0.96) !important;
+    transition:
+      opacity 0.12s ease !important,
+      transform 0.12s ease !important,
+      visibility 0s linear 0.12s !important;
+  }
+
+  .books-right-rail.is-open .books-rail-menu-panel {
+    transform: translateY(0) scale(1) !important;
+    transition:
+      opacity 0.12s ease !important,
+      transform 0.12s ease !important,
+      visibility 0s linear 0s !important;
   }
 }
 
@@ -1369,6 +1876,94 @@ body.light-mode .post-title {
 
 .post-content {
   margin-bottom: 3rem;
+}
+
+.personal-records-table {
+  width: 100%;
+  max-width: 32rem;
+  margin: 1rem 0 2rem;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  border: 1px solid rgba(146, 133, 133, 0.45);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(20, 20, 20, 0.35);
+}
+
+.personal-records-table thead {
+  background: rgba(146, 133, 133, 0.14);
+}
+
+.personal-records-table th,
+.personal-records-table td {
+  padding: 0.7rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(146, 133, 133, 0.28);
+}
+
+.personal-records-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.personal-records-table th {
+  font-weight: 600;
+  color: #ffb255;
+  letter-spacing: 0.02em;
+}
+
+.personal-records-table td {
+  color: #c4b8b8;
+}
+
+.personal-records-table td:first-child {
+  width: 42%;
+  color: #a89898;
+}
+
+.personal-records-table a {
+  color: #ffb255;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.personal-records-table a:hover {
+  color: #ffc46e;
+}
+
+body.light-mode .personal-records-table {
+  border-color: rgba(0, 34, 102, 0.35);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+body.light-mode .personal-records-table thead {
+  background: rgba(0, 68, 204, 0.08);
+}
+
+body.light-mode .personal-records-table th,
+body.light-mode .personal-records-table td {
+  border-bottom-color: rgba(0, 34, 102, 0.15);
+}
+
+body.light-mode .personal-records-table th {
+  color: #0044cc;
+}
+
+body.light-mode .personal-records-table td {
+  color: #333333;
+}
+
+body.light-mode .personal-records-table td:first-child {
+  color: #555555;
+}
+
+body.light-mode .personal-records-table a {
+  color: #0044cc;
+}
+
+body.light-mode .personal-records-table a:hover {
+  color: #003399;
 }
 
 .post-footer {
