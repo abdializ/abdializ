@@ -1878,6 +1878,48 @@ body.light-mode .post-title {
   margin-bottom: 3rem;
 }
 
+/* Favorite quotes — compact body copy (page title stays default) */
+.post-content .quotes-page {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  max-width: 36rem;
+}
+
+.post-content .quotes-page p {
+  margin: 1.15rem 0 0.35rem;
+  line-height: 1.55;
+}
+
+.post-content .quotes-page p:first-child {
+  margin-top: 0;
+}
+
+.post-content .quotes-page > div[id$="-thoughts"] {
+  margin-bottom: 0.35rem;
+}
+
+.post-header--compact .post-title {
+  font-size: 1.35rem;
+  margin-bottom: 0.35rem;
+  line-height: 1.25;
+}
+
+.post-header--compact .post-description {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.45;
+}
+
+.post-header--compact .post-description a {
+  color: #ffb255;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+body.light-mode .post-header--compact .post-description a {
+  color: #0044cc;
+}
+
 .personal-records-table {
   width: 100%;
   max-width: 32rem;

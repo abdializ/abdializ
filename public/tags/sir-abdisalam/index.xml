@@ -22,5 +22,12 @@
       <guid>https://www.abdisalam.blog/about/</guid>
       <description>&lt;h2 id=&#34;abdisalam-sharif-ali&#34;&gt;Abdisalam Sharif Ali&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.abdisalam.blog/images/cam.png&#34; alt=&#34;abdi&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well&amp;hellip; Welcome!&#xA;I&amp;rsquo;m a lover of books-classical ones mostly-a runner at heart, and someone who&amp;rsquo;s never shy about speaking my mind. If there&amp;rsquo;s one thing you should know about me, it&amp;rsquo;s that I believe in standing up for what I think is right-and doing something about it.&lt;/p&gt;&#xA;&lt;p&gt;I am in love with trying to bring education everywhere (pretty crazy that isn&amp;rsquo;t the case). I&amp;rsquo;m also a huge fan of the journalism industry and believe that traditional journalism is dying at the expense of money and greed (but I&amp;rsquo;ll probably go on and on about this in a blog post later).&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Favorite quotes</title>
+      <link>https://www.abdisalam.blog/quotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.abdisalam.blog/quotes/</guid>
+      <description>&lt;div class=&#34;quotes-page&#34;&gt;&#xA;&lt;p&gt;1. “Has there not come upon man a period of time when he was not a thing even mentioned?” — Quran 76:1 &lt;span class=&#34;quick-thought-indicator&#34; style=&#34;color: #ffb255 !important; cursor: pointer; margin-left: 5px;&#34; onclick=&#34;document.getElementById(&#39;quote-q76-thoughts&#39;).style.display = document.getElementById(&#39;quote-q76-thoughts&#39;).style.display === &#39;none&#39; ? &#39;block&#39; : &#39;none&#39;&#34;&gt;**&lt;/span&gt;&lt;/p&gt;&#xA;&lt;div id=&#34;quote-q76-thoughts&#34; style=&#34;display: none; margin-left: 20px; padding-left: 10px; border-left: 2px solid #ffb255; font-size: 0.9em;&#34;&gt;&#xA;&lt;p&gt;This really keeps me humble and makes me feel like I’m never above anyone in any reality.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;2. “Did We not create you from a lowly fluid?” — Quran 77:20 &lt;span class=&#34;quick-thought-indicator&#34; style=&#34;color: #ffb255 !important; cursor: pointer; margin-left: 5px;&#34; onclick=&#34;document.getElementById(&#39;quote-q77-thoughts&#39;).style.display = document.getElementById(&#39;quote-q77-thoughts&#39;).style.display === &#39;none&#39; ? &#39;block&#39; : &#39;none&#39;&#34;&gt;**&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

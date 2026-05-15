@@ -16,13 +16,16 @@
 <title>{{ .Title }} | {{ .Site.Title }}</title>
 
 <!-- SEO Metadata -->
-<meta name="description" content="{{ .Params.description | default .Site.Params.description }}">
+{{- $p := .Params -}}
+{{- $d := $p.description | default site.Params.description -}}
+{{- $metaDesc := or (and $p.descriptionHTML ($p.metaDescription | default ($d | plainify))) $d -}}
+<meta name="description" content="{{ $metaDesc }}">
 <meta name="keywords" content="{{ .Params.keywords | default .Site.Params.keywords }}">
 <meta name="author" content="{{ .Params.author | default site.Params.author | default "Sir Abdisalam" }}">
 
 <!-- Open Graph Metadata -->
 <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
-<meta property="og:description" content="{{ .Params.description | default .Site.Params.description }}">
+<meta property="og:description" content="{{ $metaDesc }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ .Params.image | default "default-og-image.png" | relURL }}">
@@ -30,7 +33,7 @@
 <!-- Twitter Card Metadata -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
-<meta name="twitter:description" content="{{ .Params.description | default .Site.Params.description }}">
+<meta name="twitter:description" content="{{ $metaDesc }}">
 <meta name="twitter:image" content="{{ .Params.image | default "default-og-image.png" | relURL }}">
 
 <!-- Favicon -->
