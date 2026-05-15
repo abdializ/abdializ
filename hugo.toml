@@ -1,6 +1,11 @@
 baseURL = 'https://www.abdisalam.blog/'
-languageCode = 'en-us'
+defaultContentLanguage = 'en'
 title = 'Sir Abdisalam | The Website'
+
+[languages.en]
+locale = 'en-US'
+label = 'English'
+weight = 1
 
 [taxonomies]
   tag = "tags"
@@ -21,3 +26,5 @@ title = 'Sir Abdisalam | The Website'
 
 [params]
 mainSections = ["blog"]
+author = "Sir Abdisalam"
+htmlLang = "en-US"

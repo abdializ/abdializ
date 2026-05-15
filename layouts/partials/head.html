@@ -18,7 +18,7 @@
 <!-- SEO Metadata -->
 <meta name="description" content="{{ .Params.description | default .Site.Params.description }}">
 <meta name="keywords" content="{{ .Params.keywords | default .Site.Params.keywords }}">
-<meta name="author" content="{{ .Site.Author.name | default "Your Name" }}">
+<meta name="author" content="{{ .Params.author | default site.Params.author | default "Sir Abdisalam" }}">
 
 <!-- Open Graph Metadata -->
 <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
