@@ -2,7 +2,7 @@
 title = "2024 Reflection"
 description = "Abdi and his thoughts on 2024"
 date = 2024-12-28T11:43:53-06:00
-tags = ["Sir Abdisalam"]
+tags = ["Don Abdisalam"]
 draft = false
 +++
 

@@ -4,7 +4,7 @@ description = '( **: a short note — same idea as on <a href="/books/">Books</a
 descriptionHTML = true
 metaDescription = "Favorite quotes; ** marks a short note, same convention as the Books page."
 compact = true
-tags = ["Free-Writing", "Sir Abdisalam"]
+tags = ["Free-Writing", "Don Abdisalam"]
 +++
 
 <div class="quotes-page">
