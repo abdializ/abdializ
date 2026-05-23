@@ -1,6 +1,6 @@
 baseURL = 'https://www.abdisalam.blog/'
 defaultContentLanguage = 'en'
-title = 'Sir Abdisalam | The Website'
+title = 'Don Abdisalam | The Website'
 
 [languages.en]
 locale = 'en-US'
@@ -26,5 +26,5 @@ weight = 1
 
 [params]
 mainSections = ["blog"]
-author = "Sir Abdisalam"
+author = "Don Abdisalam"
 htmlLang = "en-US"

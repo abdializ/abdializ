@@ -21,7 +21,7 @@
 {{- $metaDesc := or (and $p.descriptionHTML ($p.metaDescription | default ($d | plainify))) $d -}}
 <meta name="description" content="{{ $metaDesc }}">
 <meta name="keywords" content="{{ .Params.keywords | default .Site.Params.keywords }}">
-<meta name="author" content="{{ .Params.author | default site.Params.author | default "Sir Abdisalam" }}">
+<meta name="author" content="{{ .Params.author | default site.Params.author | default "Don Abdisalam" }}">
 
 <!-- Open Graph Metadata -->
 <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
