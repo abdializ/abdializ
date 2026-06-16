@@ -19,6 +19,12 @@
     <!-- Mode Button -->
     <button id="theme-toggle" class="mode-button">Mode</button>
 
+    {{ if .IsHome }}
+    <a href="{{ "/" | relURL }}" class="home-emblem" aria-label="Home">
+        <img src="{{ "images/abdimain3.png" | relURL }}" alt="" class="home-emblem-image" width="50" height="50">
+    </a>
+    {{ end }}
+
     <!-- Conditional Header -->
     {{ if not .IsHome }}
     {{- partial "header.html" . -}}

@@ -6,7 +6,11 @@
 <script src="{{ "js/theme.js" | relURL }}"></script>
 
 <!-- Page Title -->
-<title>{{ .Title }} | {{ .Site.Title }}</title>
+{{- $pageTitle := .Site.Title -}}
+{{- if and (not .IsHome) (ne .Title .Site.Title) -}}
+{{- $pageTitle = printf "%s | %s" .Title .Site.Title -}}
+{{- end -}}
+<title>{{ $pageTitle }}</title>
 
 <!-- SEO Metadata -->
 {{- $p := .Params -}}
@@ -17,7 +21,7 @@
 <meta name="author" content="{{ .Params.author | default site.Params.author | default "Don Abdisalam" }}">
 
 <!-- Open Graph Metadata -->
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+<meta property="og:title" content="{{ $pageTitle }}">
 <meta property="og:description" content="{{ $metaDesc }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
@@ -25,12 +29,12 @@
 
 <!-- Twitter Card Metadata -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
+<meta name="twitter:title" content="{{ $pageTitle }}">
 <meta name="twitter:description" content="{{ $metaDesc }}">
 <meta name="twitter:image" content="{{ .Params.image | default "default-og-image.png" | relURL }}">
 
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="{{ "images/favicon34.ico" | relURL }}">
+<link rel="icon" type="image/png" href="{{ "images/abdimain3.png" | relURL }}">
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="{{ "css/sirabdi.css" | relURL }}">
