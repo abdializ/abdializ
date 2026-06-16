@@ -65,6 +65,26 @@ body, html {
     transform: scale(.85); /* Slightly smaller when clicked */
 }
 
+.home-emblem {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    line-height: 0;
+    transition: transform 0.4s ease;
+}
+
+.home-emblem:hover {
+    transform: scale(1.08);
+}
+
+.home-emblem-image {
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
 
 
 .container,
@@ -77,9 +97,11 @@ body, html {
 }
 
 .spinning-a {
-    font-size: 3em;
-    color: #928585;
-    margin-bottom: 20px;
+    display: block;
+    width: 6.875rem;
+    height: 6.875rem;
+    margin: 0 auto 20px;
+    object-fit: contain;
     animation: spin 5s linear infinite, scaleInOut 5s ease-in-out infinite;
     transform-origin: center;
 }
@@ -195,8 +217,9 @@ body, html {
 @media (max-width: 768px) {
     /* Adjustments for smaller screens */
     .spinning-a {
-        font-size: 2em; /* Decrease font size */
-        margin-bottom: 10px; /* Adjust spacing */
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 10px;
     }
     
     #h1-text {
