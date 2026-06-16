@@ -168,7 +168,7 @@ body.light-mode .tag-title a {
 
 /* Light Mode */
 body.light-mode {
-  background-color: #fff1e1;
+  background-color: #FBFBFA;
   color: #002266; /* Darker/bolder blue text (was #0a1f44) */
 }
 
@@ -244,7 +244,7 @@ body.light-mode .checkbox {
 
 /* Light mode overrides */
 :root.light-mode {
-  --background-color: #fff1e1;
+  --background-color: #FBFBFA;
   --text-color: #000000;
   --link-color: #0044cc; /* Thicker/bolder blue (was #1a73e8) */
   --border-color: #cccccc;
@@ -500,7 +500,7 @@ h1 {
 
 /* Light mode override for theme toggle */
 body.light-mode #theme-toggle {
-  background-color: #fff1e1;
+  background-color: #FBFBFA;
   color: #002266;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -1510,7 +1510,7 @@ blockquote {
 
 /* Core light mode styles - ensure these have high specificity */
 html body.light-mode {
-  background-color: #fff1e1 !important;
+  background-color: #FBFBFA !important;
   color: #0a1f44 !important;
 }
 
@@ -1530,7 +1530,7 @@ body.light-mode .about-content {
 
 /* Ensure the toggle button has the correct styles */
 body.light-mode #theme-toggle {
-  background-color: #fff1e1 !important;
+  background-color: #FBFBFA !important;
   color: #40280b !important;
 }
 
@@ -1720,7 +1720,7 @@ body.light-mode .tag-link {
 body.light-mode .tag-link:hover,
 body.light-mode .tag-link.active {
   background-color: #0044cc;
-  color: #fff1e1;
+  color: #FBFBFA;
 }
 
 /* Post Preview Styling */
@@ -1825,7 +1825,7 @@ body.light-mode .post-tag {
 
 body.light-mode .post-tag:hover {
   background-color: #0044cc;
-  color: #fff1e1;
+  color: #FBFBFA;
 }
 
 /* Enhanced Single Post Styles */
@@ -2528,7 +2528,7 @@ body.light-mode .chroma .nx { color: #2c5282; }
 }
 
 body.light-mode .lightbox-caption {
-  color: #fff1e1; /* Light mode caption text */
+  color: #FBFBFA; /* Light mode caption text */
   background-color: rgba(64, 40, 11, 0.8); /* Dark coffee bg */
 }
 
@@ -2629,6 +2629,6 @@ body.light-mode .lightbox-caption {
 }
 
 body.light-mode .lightbox-caption {
-  color: #fff1e1; /* Light mode caption text */
+  color: #FBFBFA; /* Light mode caption text */
   background-color: rgba(64, 40, 11, 0.8); /* Dark coffee bg */
 }

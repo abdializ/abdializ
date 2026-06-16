@@ -1,56 +1,16 @@
-// Theme toggle functionality with direct style manipulation
+// Theme toggle: auto (system), light, or dark
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('DOM loaded, looking for theme toggle button');
-
     const themeToggleButton = document.getElementById('theme-toggle');
-    console.log('Theme toggle button found:', !!themeToggleButton);
 
-    if (themeToggleButton) {
-        // Add a click event with logging
+    if (window.SiteTheme) {
+        window.SiteTheme.init();
+    }
+
+    if (themeToggleButton && window.SiteTheme) {
         themeToggleButton.addEventListener('click', function (e) {
-            console.log('Button clicked');
-            e.preventDefault(); // Prevent any default action
-
-            const isCurrentlyLight = document.body.classList.contains('light-mode');
-            console.log('Current mode is light:', isCurrentlyLight);
-
-            if (isCurrentlyLight) {
-                // Switch to dark mode
-                document.body.classList.remove('light-mode');
-                document.body.style.backgroundColor = '#090b09';
-                themeToggleButton.style.backgroundColor = '#090b09';
-                themeToggleButton.style.color = '#948779';
-                localStorage.removeItem('theme');
-                console.log('Switched to dark mode');
-            } else {
-                // Switch to light mode
-                document.body.classList.add('light-mode');
-                document.body.style.backgroundColor = '#fff1e1';
-                themeToggleButton.style.backgroundColor = '#fff1e1';
-                themeToggleButton.style.color = '#40280b';
-                localStorage.setItem('theme', 'light-mode');
-                console.log('Switched to light mode');
-            }
+            e.preventDefault();
+            window.SiteTheme.toggle();
         });
-
-        // Set initial theme with logging
-        const savedTheme = localStorage.getItem('theme');
-        console.log('Saved theme:', savedTheme);
-
-        if (savedTheme === 'light-mode') {
-            document.body.classList.add('light-mode');
-            document.body.style.backgroundColor = '#fff1e1';
-            themeToggleButton.style.backgroundColor = '#fff1e1';
-            themeToggleButton.style.color = '#40280b';
-            console.log('Applied light mode from saved preference');
-        } else {
-            document.body.style.backgroundColor = '#090b09';
-            themeToggleButton.style.backgroundColor = '#090b09';
-            themeToggleButton.style.color = '#948779';
-            console.log('Applied dark mode (default)');
-        }
-    } else {
-        console.error('Theme toggle button not found!');
     }
 });
 

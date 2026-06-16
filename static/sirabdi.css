@@ -11,7 +11,7 @@
 
 /* Light mode overrides */
 body.light-mode {
-    --background-color: #FFF1E1;
+    --background-color: #FBFBFA;
     --text-color: #000000;
     --link-color: #1a73e8;
     --border-color: #cccccc;
