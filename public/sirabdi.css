@@ -3,6 +3,7 @@
     --background-color: #090B09;
     --text-color: #928585;
     --link-color: #6F6666;
+    --accent-color: #ffb255;
     --border-color: #777777;
     --button-color: var(--background-color);
 }
@@ -13,7 +14,8 @@
 body.light-mode {
     --background-color: #FBFBFA;
     --text-color: #000000;
-    --link-color: #1a73e8;
+    --link-color: #0044cc;
+    --accent-color: #0044cc;
     --border-color: #cccccc;
     --button-color: var(--background-color);
 }
@@ -163,24 +165,37 @@ body, html {
 }
 
 .social-icon {
-    margin: 0 10px; /* Adjust spacing as needed */
     display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    background-color: var(--text-color);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    transition: background-color 0.3s ease;
 }
 
-.social-icon img {
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
-    filter: invert(34%) sepia(3%) saturate(0%) hue-rotate(200deg) brightness(96%) contrast(91%); /* Change this filter to match the color of your h1 element */
-    transition: filter 0.3s ease;
+.social-icon:hover {
+    background-color: var(--accent-color);
 }
 
-.social-icon img:hover {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(200deg) brightness(100%) contrast(100%); /* Adjust hover effect as needed */
+.social-icon--instagram {
+    mask-image: url("/images/icons8-instagram.svg");
+    -webkit-mask-image: url("/images/icons8-instagram.svg");
 }
 
-/* Change the color to match the h1 element */
- .social-icon img {
-    color: #2B2A2A; /* Same color as h1 */
+.social-icon--linkedin {
+    mask-image: url("/images/icons8-linkedin.svg");
+    -webkit-mask-image: url("/images/icons8-linkedin.svg");
+}
+
+.social-icon--github {
+    mask-image: url("/images/icons8-github.svg");
+    -webkit-mask-image: url("/images/icons8-github.svg");
 }
 
 @keyframes typing {

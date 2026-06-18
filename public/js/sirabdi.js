@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Create a placeholder that will always be there but invisible
     const placeholder = document.createElement('span');
-    placeholder.textContent = 'Under Construction'; // Use the longest text as placeholder
+    placeholder.textContent = 'Soo dhawoow, way fiican tahay inaad halkan joogto.';
     placeholder.style.visibility = 'hidden';
     placeholder.style.position = 'absolute';
     placeholder.style.height = '0';
@@ -139,11 +139,11 @@ document.addEventListener('DOMContentLoaded', function () {
     textElement.style.textAlign = 'center';
 
     const texts = [
-        { content: '在建中', direction: 'ltr' },
-        { content: 'In costruzione', direction: 'ltr' },
-        { content: 'قيد الإنشاء', direction: 'rtl' },
-        { content: 'Socodka dhismaha', direction: 'ltr' },
-        { content: 'Under Construction', direction: 'ltr' }
+        { content: '欢迎，很高兴你来到这里', direction: 'ltr' },
+        { content: 'Benvenuto, è bello averti qu.', direction: 'ltr' },
+        { content: 'أهلاً بك، من الجميل أن تكون هنا', direction: 'rtl' },
+        { content: 'Soo dhawoow, way fiican tahay inaad halkan joogto', direction: 'ltr' },
+        { content: "Welcome, it's nice to have you here", direction: 'ltr' }
     ];
     let textIndex = 0;
 
