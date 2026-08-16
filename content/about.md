@@ -18,4 +18,6 @@ I am in love with trying to bring education everywhere (pretty crazy that isn't 
 When I'm not going on and on about technical subjects, I love running, writing (with tea, not coffee), and learning languages. Turkish is my current obsession.
 Welcome and hope you enjoy your visit here
 
+If you want the more career-focused version, you can view my [resume](/resume/).
+
 > "Besides, nowadays, almost all capable people are terribly afraid of being ridiculous, and are miserable because of it. " ++ Fyodor Dostoevsky - The brothers Karamazov
