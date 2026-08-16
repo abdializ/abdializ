@@ -6,6 +6,7 @@ description = "This is where random stuff will be stored for example photos, lin
 ## Links
 
 - [Favorite quotes](/quotes/)
+- [Resume](/resume/)
 
 ## Personal records
 
@@ -49,4 +50,3 @@ description = "This is where random stuff will be stored for example photos, lin
   </div>
 </div>
 -->
-
