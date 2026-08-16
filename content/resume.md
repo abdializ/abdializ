@@ -224,31 +224,16 @@ draft = false
 </div>
 
 <aside class="resume-right-rail" aria-label="Resume guide">
-  <div class="resume-rail-inner">
-    <span class="resume-rail-kicker">Guide</span>
-    <div class="resume-rail-mobile-stack">
-      <button
-        class="resume-rail-mobile-trigger"
-        type="button"
-        aria-expanded="false"
-        aria-controls="resume-rail-menu-panel"
-      >
-        Sections
-      </button>
-      <div class="resume-rail-menu-panel" id="resume-rail-menu-panel">
-        <nav class="resume-rail-nav">
-          <a href="#resume-education">Education</a>
-          <a href="#resume-skills">Skills</a>
-          <a href="#resume-experience">Experience</a>
-          <a href="#resume-leadership">Leadership</a>
-          <a href="#resume-projects">Projects</a>
-        </nav>
-        <hr class="resume-rail-divider" />
-        <button type="button" class="resume-rail-close">Close</button>
-      </div>
-    </div>
-    <p class="resume-rail-note">Jump between the main parts of the resume without losing your place.</p>
-  </div>
+  <details class="resume-guide-menu">
+    <summary class="resume-guide-trigger">Sections</summary>
+    <nav class="resume-guide-panel">
+      <a href="#resume-education">Education</a>
+      <a href="#resume-skills">Skills</a>
+      <a href="#resume-experience">Experience</a>
+      <a href="#resume-leadership">Leadership</a>
+      <a href="#resume-projects">Projects</a>
+    </nav>
+  </details>
 </aside>
 </div>
 </div>
